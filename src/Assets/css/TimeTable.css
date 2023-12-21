@@ -1,0 +1,23 @@
+.main-time-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    margin: 20px;
+}
+
+th{
+    border: 1px solid #7e7e7e;
+    background-color: #0d4786;
+    color: white;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #7e7e7e;
+    background-color: #2b9adb;
+    color: white;
+    padding: 10px;
+}

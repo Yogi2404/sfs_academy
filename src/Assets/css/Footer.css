@@ -1,0 +1,69 @@
+.footeer-main{
+    background-color: rgb(214, 242, 255);
+    padding: 20px;
+}
+
+.footer-brand img{
+    filter: drop-shadow(1px 1px 1px #003a61);
+    width: 200px;
+}
+ul {
+    list-style: none;
+}
+li{
+    margin: 5px;
+}
+
+.add{
+    width: 20px;
+    margin: 5px;
+}
+
+.phn{
+    width: 20px;
+    margin: 5px;
+}
+
+.mail{
+    width: 20px;
+    margin: 5px;
+}
+
+.socials img{
+    margin: 10px;
+    width: 35px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.socials .ig{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.socials .wa{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.socials .li{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.socials .fb{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.socials .ig:hover{
+    background-color: #bc2a8ec7;
+}
+.socials .wa:hover{
+    background-color: #25D366;
+}
+.socials .li:hover{
+    background-color: #0077b5  ;
+}
+.socials .fb:hover{
+    background-color: #316FF6;
+}
