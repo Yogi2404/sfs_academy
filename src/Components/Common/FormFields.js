@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import Select from 'react-select';
 
-const FormFields = ({ fieldName, inputDisabled, label, id, type, placeholder, options, onChange, value, requiredInd, showErrorMsg }) => {
+const FormFields = ({ fieldName, inputDisabled, label, id, type, placeholder, options, onChange, value, requiredInd, showErrorMsg, onBlur }) => {
 
 
     const hasError = showErrorMsg;
@@ -26,6 +26,26 @@ const FormFields = ({ fieldName, inputDisabled, label, id, type, placeholder, op
                         {hasError && <div id={id} className="form-text text-danger">{showErrorMsg}</div>}
                     </div>
                 );
+            case "DateInput":
+                return (
+                    <div className="form-group">
+                        <label htmlFor={id}>{label}</label> {requiredInd ? (<span className="text-danger">*</span>) : (null)}
+                        <input
+                            type="text" // Use type "text" to allow custom formatting
+                            className="form-control"
+                            id={id}
+                            placeholder="YYYY/MM/DD"
+                            value={value}
+                            onChange={onChange}
+                            onBlur={onBlur}
+                            disabled={inputDisabled}
+                            pattern="\d{4}/\d{2}/\d{2}" // Pattern for validating the date format
+                            title="Please enter a date in the format YYYY/MM/DD"
+                        />
+                        {hasError && <div id={id} className="form-text text-danger">{showErrorMsg}</div>}
+                    </div>
+                );
+
             case "DropDown":
                 return (
                     <div className="form-group">

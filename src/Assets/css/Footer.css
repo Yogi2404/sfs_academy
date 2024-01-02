@@ -1,4 +1,4 @@
-.footeer-main{
+.footer-main{
     background-color: rgb(214, 242, 255);
     padding: 20px;
 }
@@ -25,6 +25,11 @@ li{
 }
 
 .mail{
+    width: 20px;
+    margin: 5px;
+}
+
+.location{
     width: 20px;
     margin: 5px;
 }
@@ -66,4 +71,15 @@ li{
 }
 .socials .fb:hover{
     background-color: #316FF6;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-us{
+        margin-left: -33px;
+    }
 }

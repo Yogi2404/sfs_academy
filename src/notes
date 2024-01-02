@@ -1,0 +1,40 @@
+
+Cardio Pulmonary and Vascular
+Neurology(Adult and Pedeatrics)
+Comunity Rehabilitation(Women's Health, Geritraics, Ergonomics) 
+Manual Therapy
+Psycology (Human Behaviour Analysis) 
+Radiology(X-Ray, MRI)
+Non-System and Other System Conditions 
+Anatomy / Physiology / Bio-Mechanincs
+Treatment Theories and Strategies
+Electro Therapy 
+Infection Control 
+Explained in detail with Clinical Reasoning in Relation to Physical Therapy
+
+
+<div className='boxes main-3'>
+                <div className="container-fluid">
+                    <div className="row">
+                        {/* On small screens (tablet and phone), show the image first */}
+                        <div className="col-lg-4 d-flex flex-column justify-content-center align-items-center" id='item1'>
+                            <div className="box1">
+                                <img src={tt} />
+                                <button onClick={handleGotoTimeTable}>Check Timetable</button>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 d-flex flex-column justify-content-center align-items-center" id='item2'>
+                            <div className="box2">
+                                <img src={img5} />
+                                <button>Recorded Lectures</button>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 d-flex flex-column justify-content-center align-items-center text-center" id='item3'>
+                            <div className="box3">
+                                <img src={img6} />
+                                <button>Get Resources</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

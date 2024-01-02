@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from "./utilities/Navbar";
 import Footer from "./utilities/Footer";
 import '../Assets/css/Main.css';
@@ -13,12 +14,25 @@ import tt from '../Assets/img/Calendar-pana.svg';
 import ReactPlayer from 'react-player';
 import LoginModel from '../Components/User/LoginModal';
 import RegisterModal from "./User/RegisterModal";
+import VideoPlayer from './Common/VideoPlayer';
+import MyVideo from '../Assets/videos/demovideo.mp4';
+import VideoThumb from '../Assets/videos/Kalamkaar-releases-latest-song-No-Mercy-under-tunnel-vision-860x484.webp';
+import CounsellingForm from './CommonPages/CounsellingForm';
 
 const Main = () => {
 
     const [showLoginModal, setShowLoginModal] = useState(false);
     const [showRegisterModal, setShowRegisterModal] = useState(false);
     const loggedIn = false;
+
+    const navigate = useNavigate();
+
+    const handleGotoTimeTable = () => {
+        // Use the history object to navigate to another page
+        navigate('/time-table');
+    };
+
+
 
     const openLoginModal = () => {
         setShowLoginModal(true);
@@ -52,10 +66,10 @@ const Main = () => {
             <div className="col-lg-12 d-flex main-1">
                 <div className="title col-lg-6">
 
-                    <div className="d-flex logo wt">
-                        <h1 className="wt">W</h1>
+                    <div className="wt">
+                        <h1 >Welcome to SFS Academy</h1>
                         <div className="title-info">
-                            <p>elcome to SFS Academy a physiotherapy academy serves as a </p><p className="description">specialized institution dedicated to the comprehensive education and training of aspiring physiotherapists. These academies play a pivotal role in shaping healthcare professionals who are proficient in assessing and treating a diverse range of musculoskeletal, neurological, and respiratory conditions.</p>
+                            <p>It is an online academy which serves as a specialized platform dedicated to the comprehensive education and training of aspiring Physiotherapists in clinical and academics. Our Academy offers a program that is as per the compiled blueprints of International standards which creates a pathway to achieve success in becoming a licensed PT across the globe. Our academy focuses on enhancing Physiotherapy knowledge for better strategies in Rehabilitation.</p>
                         </div>
                     </div>
 
@@ -64,40 +78,55 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="col-lg-6 phisio">
-                    <video width="640" height="360" controls>
-                        <source src="../Assets/videos/demovideo.mp4" type="video/mp4" />
-                    </video>
+                    <VideoPlayer src={MyVideo} thumbnail={VideoThumb} />
                 </div>
             </div>
-            <div className="col-lg-12 d-flex main-2">
-                <div className="col-lg-6 phi">
-                    <img src={img2} />
-                </div>
-                <div className="col-lg-6">
+            <div className="d-flex main-2">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-lg-6 pho">
+                            <h1 className="eyp">Why choose us?</h1>
+                            <div className="phiso-info">
+                                <ul>
+                                    <li>Our dedicated and highly skilled staff have good clinical exposure.</li>
+                                    <li>A thorough understanding what is required for enhancing clinical practice.</li>
+                                    <li>Our founder is relentless and enthusiastic at resolving issues and doubts both inside and outside the classroom.</li>
+                                    <li>We also emphasise on sharpening the management skills of our aspirants.</li>
+                                    <li>Bridging the gap between your academic and clinical knowledge.</li>
+                                </ul>
+                            </div>
 
-                    <h1>Enhancing your Physiotherapy</h1>
-                    <p className="phiso-info">Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. It can also help to reduce your risk of injury or illness in the future. It takes a holistic approach that involves the patient directly in their own care.</p>
-                    <div className="col-lg-12 d-flex">
-                        <div className="col-lg-6 show">
-                            <h3 className="mt">More Than</h3>
-                            <h1 className="stu">300+</h1>
-                            <h3 className="hs">Happy Students</h3>
                         </div>
-                        <div className="col-lg-6 show ms-5">
-                            <h3 className="mt">Interactive</h3>
-                            <h1 className="stu">36</h1>
-                            <h3 className="hs">Lectures</h3>
+                        <div className="col-lg-6"></div>
+                        <div className="col-lg-6"></div>
+                        <div className="col-lg-6 pho">
+                            <h1 className="eyp">Enhancing your Physiotherapy</h1>
+                            <div className="phiso-info">
+                                <p>We offer variety of Resources, Live Lectures, Structured Study Material, Question solving strategies which will contain academic and practical insights. Our high quality and affordable online tutoring is provided by proficient tutors with a long standing clinical experience. Content is well curated and paced. A new perspective with clinical relevance will be a good add on to clinical practice.</p>
+                            </div>
+                            <div className="col-lg-12 d-flex">
+                                <div className="col-lg-6 show">
+                                    <h3 className="stu">32</h3>
+                                    <h1 className="mt">Interactive</h1>
+                                    <h3 className="hs">Lectures</h3>
+                                </div>
+                                <div className="col-lg-6 show ms-5">
+                                    <h3 className="stu">5</h3>
+                                    <h1 className="mt">Bonus</h1>
+                                    <h3 className="hs">Lectures</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 boxes main-3">
+            {/* <div className="col-lg-12 boxes main-3">
                 <h1>Phisiotherapy Course and Resources</h1>
                 <div className="d-flex box-container">
                     <div className="col-lg-4">
                         <div className="box1">
                             <img src={tt} />
-                            <button>Check Timetable</button>
+                            <button onClick={handleGotoTimeTable}>Check Timetable</button>
                         </div>
                     </div>
                     <div className="col-lg-4">
@@ -116,41 +145,41 @@ const Main = () => {
                 <div className="gp">
                 </div>
 
-            </div>
+            </div> */}
+            
             <div className="col-lg-12 d-flex main-4">
-                <div className="col-lg-6">
-                    <h1 className="nh">Need Help?</h1>
-                    <h2 className="help">Want the mentor to help you out?</h2>
-                    <p className="para">Are you struggling to find the best guidance and solution for how to proceed with the Enrollment or Credentialing? Contact us.</p>
-                </div>
-                <div className="col-lg-6">
-                    <form className="form">
-                        <h2 className="byf">Schedule Your Free</h2>
-                        <h2 className="cons">Counselling</h2>
-                        <label>
-                            <input required="" placeholder="" type="text" className="input" />
-                            <span>Your Name</span><span className="star">*</span>
-                        </label>
-                        <label>
-                            <input required="" placeholder="" type="email" className="input" />
-                            <span>Email</span><span className="star">*</span>
-                        </label>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-lg-6 need-help">
+                            <h2 className="help d-flex justify-content-center">SFS Academy offers</h2>
+                            <ul className="course-offering d-flex justify-content-center">
+                                <li>Musculoskeletal</li>
+                                <li>Cardio Pulmonary and Vascular</li>
+                                <li>Neurology(Adult and Pedeatrics)</li>
+                                <li>Comunity Rehabilitation(Women's Health, Geritraics, Ergonomics) </li>
+                                <li>Manual Therapy</li>
+                                <li>Psycology (Human Behaviour Analysis) </li>
+                                <li>Radiology(X-Ray, MRI)</li>
+                                <li>Non-System and Other System Conditions </li>
+                                <li>Anatomy / Physiology / Bio-Mechanincs</li>
+                                <li>Treatment Theories and Strategies</li>
+                                <li>Electro Therapy </li>
+                                <li>Infection Control </li>
+                                <li>Indications and Contra-Indications</li>
+                            </ul>
+                            <h5 className="help d-flex justify-content-center">All Concepts will be explained in detail along with clinical reasoning. </h5>
 
-                        <label>
-                            <input required="" placeholder="" type="number" className="input" />
-                            <span>Phone Number</span><span className="star">*</span>
-                        </label>
-                        <label className="d-flex mb-3">
-                            <div className="col-lg-6 pt-1">
-                                <span>Schedule Date for meeting</span><span className="star">*</span>
-                            </div>
-                            <div className="col-lg-6">
-
-                                <input required="" placeholder="" type="date" className="input" />
-                            </div>
-                        </label>
-                        <button className="submit">Submit</button>
-                    </form>
+                        </div>
+                        <div className="col-lg-6 d-flex justify-content-center">
+                            <form className="form">
+                                <h2 className="byf">Schedule Your Free</h2>
+                                <h2 className="cons">Counselling</h2>
+                                <div className="counselling-form">
+                                    <CounsellingForm />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="footer">
@@ -158,17 +187,17 @@ const Main = () => {
             </div>
             {/* opening login model */}
             {showLoginModal && (
-                        <LoginModel
-                            isOpen={showLoginModal}
-                            onClose={closeLoginModal}
-                            onOpenRegister={openRegisterModal}
-                            loggedIn={loggedIn}
-                        />
-                    )}
+                <LoginModel
+                    isOpen={showLoginModal}
+                    onClose={closeLoginModal}
+                    onOpenRegister={openRegisterModal}
+                    loggedIn={loggedIn}
+                />
+            )}
 
-                    {showRegisterModal && (
-                        <RegisterModal isOpen={showRegisterModal} onClose={closeRegisterModal} />
-                    )}
+            {showRegisterModal && (
+                <RegisterModal isOpen={showRegisterModal} onClose={closeRegisterModal} />
+            )}
         </div>
     );
 };

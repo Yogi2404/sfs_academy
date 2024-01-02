@@ -10,35 +10,36 @@ const TimeTable = () => {
                 <Navbar />
             </div>
             <div className="main-time-table">
-                <table className="time-table">
-                    <thead>
-                        <tr>
-                            <th>Sr No.</th>
-                            <th>Topic Name</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>Data 1</td>
-                            <td>Data 2</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>Data 3</td>
-                            <td>Data 4</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>Data 5</td>
-                            <td>Data 6</td>
-                        </tr>
-                        {/* Add more rows as needed */}
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th className="srno" scope="col">Sr. No.</th>
+                                <th className="tn" scope="col">Topic Name</th>
+                                <th className="d" scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th className="srno" scope="row">1</th>
+                                <td className="text">Cell</td>
+                                <td className="text">Cell</td>
+                            </tr>
+                            <tr>
+                                <th className="srno" scope="row">2</th>
+                                <td className="text">Cell</td>
+                                <td className="text">Cell</td>
+                            </tr>
+                            <tr>
+                                <th className="srno" scope="row">3</th>
+                                <td className="text">Cell</td>
+                                <td className="text">Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div className="footer">
+            <div className="tt-footer">
                 <Footer />
             </div>
         </div>

@@ -1,0 +1,112 @@
+.pause-play{
+    background-color: transparent;
+    border: none;
+    transform: translate(0px, -35px);
+    color: white;
+}
+
+.stop{
+    visibility: hidden;
+}
+
+
+/* Styles for the input range */
+.progress-bar {
+    width: 100%;
+    margin: 10px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    transform: translate(30px, -60px);
+    width: 560px;
+  }
+  
+  /* Styling the track (background) of the range */
+  .progress-bar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #fff; /* Set the background color */
+    border-radius: 2px;
+  }
+  
+  .progress-bar::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #fff; /* Set the background color */
+    border-radius: 2px;
+  }
+  
+  /* Styling the thumb (handle) of the range */
+  .progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #fff; /* Set the color of the handle */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -3px; /* Adjust the position */
+  }
+  
+  .progress-bar::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #fff; /* Set the color of the handle */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Remove default focus outline */
+  .progress-bar:focus {
+    outline: none;
+  }
+  
+  /* Set the color of the progress (filled) part of the range */
+  .progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ff0000; /* Set the color of the filled part */
+  }
+  
+  .progress-bar::-moz-range-progress {
+    background: #ca4545; /* Set the color of the filled part */
+  }
+  
+
+.volume-bar{
+    visibility: hidden;
+}
+
+.mute{
+    transform: translate(590px, -88px);
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 20px;
+}
+
+.full-screen{
+    transform: translate(465px, -88px);
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.video-wrapper{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.video-player{
+    width: 640px;
+}
+
+
+
+@media all and (max-width: 767px) {
+    .video-player{
+        width: 100%;
+        height: auto;
+    }
+}

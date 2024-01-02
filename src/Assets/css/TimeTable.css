@@ -1,23 +1,50 @@
-.main-time-table{
+.main-time-table {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
-table{
-    margin: 20px;
-}
-
-th{
+table {
     border: 1px solid #7e7e7e;
-    background-color: #0d4786;
-    color: white;
+}
+
+tr{
+    background-color: rgb(214, 242, 255);
+}
+
+th {
+    border: 1px solid #7e7e7e;
     padding: 10px;
 }
 
-td{
+.srno{
+    width: 100px;
+    text-align: center;
+}
+
+.tn{
+    width: 500px;
+    text-align: center;
+}
+
+.d{
+    width: 150px;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+
+td {
     border: 1px solid #7e7e7e;
-    background-color: #2b9adb;
-    color: white;
     padding: 10px;
+}
+
+.tt-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

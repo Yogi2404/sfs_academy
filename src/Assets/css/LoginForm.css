@@ -1,0 +1,23 @@
+.login-submit{
+    display: flex;
+    justify-content: center;
+    transform: translate(-70px);
+    margin: 10px;
+}
+
+.login-submit button{
+    width: 200px;
+}
+
+.existing-user{
+    color: rgb(0, 102, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.existing-user:hover{
+    color: rgb(0, 84, 211);
+}

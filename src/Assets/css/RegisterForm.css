@@ -1,0 +1,10 @@
+.register-submit{
+    display: flex;
+    justify-content: center;
+    transform: translate(-50px);
+    margin: 10px;
+}
+
+.register-submit button{
+    width: 500px;
+}

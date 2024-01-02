@@ -1,0 +1,30 @@
+.button-submit {
+    border: none;
+    outline: none;
+    background-color: #0097B2;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    transition: 0.5s;
+    border: 1px solid #0097B2;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+
+.button-submit:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #0097B2;
+    color: #0097B2;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .button-submit{
+        transform: translate(-75px);
+        margin-bottom: 30px;
+    }
+}

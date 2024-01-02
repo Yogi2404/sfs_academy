@@ -12,6 +12,9 @@ import li from "../../Assets/icons/fa/linkedin.svg";
 
 function Footer() {
     const footRef = useRef();
+    const emailAddress = 'sfsacad.info@gmail.com';
+    const phoneNumber = '+91 8983019596';
+    const phoneNumber2 = '+91 9975287669';
 
     const showFooter = () => {
         footRef.current.classList.toggle(
@@ -22,29 +25,25 @@ function Footer() {
 
     return (
         <div>
-            <div className="col-lg-12 d-flex footeer-main">
-                {/* <div className="col-lg-3">
-                    <div className="footer-brand"><a className="footer-brand ms-5 me-5 logo" href="#"><img src={logo}></img></a></div>
-                </div> */}
-                <div className="col-lg-6">
-
+            <div className="col-lg-12 d-flex footer-main">
+                <div className="col-lg-6 d-flex contact-us">
                     <ul>
                         <h4>Contact Us</h4>
                         <div className="d-flex">
-                        <li><img className="phn" src={call} />+91 8983019596</li><li>/</li>
-                        <li>+91 9975287669</li>
+                        <li><img className="phn" src={call} /><a href={`tel:${phoneNumber}`}>{phoneNumber}</a></li><li>/</li>
+                        <li><a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a></li>
                         </div>
-                        <li><img className="mail" src={mail} />sfsacad.info@gmail.com</li>
+                        <li><img className="mail" src={mail} /><a href={`mailto:${emailAddress}`}>{emailAddress}</a></li>
+                        <li><img className="location" src={map} />PCMC, Maharashtra</li>
                     </ul>
                 </div>
                 <div className="col-lg-6 socials">
                     
                         <h4>Socials</h4>
                         <a href="https://www.instagram.com/sfs.academy?igshid=NGVhN2U2NjQ0Yg==" target="_blank" rel="noopener noreferrer"><img className="ig" src={ig} /></a>
-                        <a href="https://api.whatsapp.com/send?phone=919975287669" target="_blank" rel="noopener noreferrer"><img className="wa" src={wa} /></a>
+                        <a href="https://api.whatsapp.com/send?phone=918983019596" target="_blank" rel="noopener noreferrer"><img className="wa" src={wa} /></a>
                         <a><img className="fb" src={fb} /></a>
                         <a href="https://www.linkedin.com/in/sfs-academy-a57b762a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><img className="li" src={li} /></a>
-                    
                 </div>
             </div>
         </div>

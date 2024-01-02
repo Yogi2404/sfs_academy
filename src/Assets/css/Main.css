@@ -3,7 +3,23 @@ body {
   overflow-x: hidden;
 }
 
+.show {
+  width: 100%;
+}
 
+.container-fluid {
+  /* Example: Limit content width to improve readability on larger screens */
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  /* Prevent line breaks */
+}
+
+
+
+.navbar {
+  transform: translate();
+}
 
 .button2 {
   position: fixed;
@@ -15,11 +31,12 @@ body {
   transition: all 0.2s ease-in;
   overflow: hidden;
   z-index: 1;
-  color: #090909;
+  color: #009087;
   padding: 0.7em 3.3em 0.7em 1.7em;
   font-size: 18px;
+  font-weight: 900;
   border-radius: 0.5em;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 144, 135, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1px);
@@ -96,16 +113,15 @@ body {
 
 .main-1 {
   background-color: rgb(214, 242, 255);
-  padding-bottom: 40px;
+  height: 450px;
+  transform: translate(0px, -10px);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
   padding-left: 100px;
-  padding-top: 50px;
-}
-
-.description {
-  transform: translate(-30px, -15px);
+  padding-top: 100px;
 }
 
 .wt h1 {
@@ -123,7 +139,6 @@ body {
 }
 
 .title-info {
-  margin-top: 20px;
   font-weight: 600;
   width: 500px;
 }
@@ -158,37 +173,50 @@ body {
 }
 
 
-.main-2 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.pho{
+  
 }
 
+
+
 .phi img {
-  width: 600px;
+  width: 500px;
   height: 100%;
-  padding-left: 100px;
+  transform: translate(60px,0px);
 }
 
 .phiso-info {
   margin-top: 20px;
   font-weight: 600;
-  width: 500px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.phiso-info ul{
+  list-style: circle;
+}
+
+.phiso-info li{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .show {
   width: 250px;
-  padding-left: 25px;
+  padding-left: 100px;
   padding-top: 5px;
 }
 
 .mt {
   color: #0097B2;
+  margin-top: -15px;
+  font-size: 30px;
 }
 
 .stu {
   color: chartreuse;
-  margin-top: -10px;
   font-weight: 900;
+  font-size: 50px;
 }
 
 .hs {
@@ -197,13 +225,19 @@ body {
 }
 
 .boxes {
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   place-items: center;
   background-color: rgb(214, 242, 255);
 }
 
+.main-3 {
+  height: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  /* Hide horizontal overflow */
+  white-space: nowrap;
+}
 
 .boxes h1 {
   padding-top: 20px;
@@ -265,10 +299,9 @@ body {
   border-radius: 25px;
   padding: 10px;
   color: white;
-  margin-left: 65px;
-  margin-top: 30px;
   border: 1px solid #0097B2;
   transition: 0.5s;
+  transform: translate(-200px, 140px);
 }
 
 .box1 button:hover {
@@ -283,10 +316,9 @@ body {
   border-radius: 25px;
   padding: 10px;
   color: white;
-  margin-left: 60px;
-  margin-top: 30px;
   transition: 0.5s;
   border: 1px solid #0097B2;
+  transform: translate(-200px, 140px);
 }
 
 .box2 button:hover {
@@ -301,10 +333,9 @@ body {
   border-radius: 25px;
   padding: 10px;
   color: white;
-  margin-left: 75px;
-  margin-top: 30px;
   transition: 0.5s;
   border: 1px solid #0097B2;
+  transform: translate(-190px, 140px);
 }
 
 .box3 button:hover {
@@ -313,21 +344,25 @@ body {
   color: #0097B2;
 }
 
-.main-4 {
-  padding-left: 100px;
-  margin-top: 50px;
-}
+
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 500px;
-  background-color: #fff;
   border-radius: 20px;
   position: relative;
-  padding-left: 100px;
   margin-bottom: 30px;
+  transform: translate(20px,20px);
+}
+
+.need-help{
+  padding: 20px;
+}
+
+.para {
+  white-space: pre-wrap;
 }
 
 .byf {
@@ -359,11 +394,7 @@ body {
   text-decoration: underline royalblue;
 }
 
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
+
 
 .form label {
   position: relative;
@@ -400,6 +431,28 @@ body {
   color: #0097B2;
 }
 
+.course-offering li {
+  background-color: #0097B2;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  width: fit-content;
+  transition: 0.3s;  
+  margin: 5px;
+}
+.course-offering{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.course-offering li:hover{
+  color: chartreuse;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -409,5 +462,103 @@ body {
   to {
     transform: scale(1.8);
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-1 {
+    height: 600px;
+    margin-bottom: 200px;
+  }
+
+  .wt {
+    transform: translate(-80px, 140px);
+    max-width: 100%;
+  }
+
+  .wt h1 {
+    font-size: 24px;
+    transform: translate(35px);
+  }
+
+  .phisio {
+    transform: translate(45px, -445px);
+    width: 300px;
+  }
+
+  .enroll-now {
+    transform: translate(-30px, 130px);
+  }
+
+  .enroll-now button {
+    width: 250px;
+  }
+
+  .title-info {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    transform: translate(30px);
+  }
+
+  
+
+  .eyp {
+    font-size: 25px;
+    transform: translate(0px, -300px);
+  }
+
+  .phi img {
+    width: 400px;
+    transform: translate(-60px, -100px);
+  }
+
+  .form {
+    width: 100%;
+    /* Make the form fill the container on smaller screens */
+    padding-left: 20px;
+    /* Adjust left padding for smaller screens */
+  }
+
+  .box2 {
+    transform: translate(-20px);
+  }
+
+  .box3 {
+    transform: translate(-30px);
+  }
+
+  .nh {
+    font-size: 25px;
+    transform: translate(120px);
+  }
+
+  .help {
+    font-size: 20px;
+    transform: translate(30px);
+  }
+
+  .need-help {
+    transform: translate(0px, 20px);
+  }
+
+  .byf {
+    transform: translate(25px, 30px);
+  }
+
+  .cons {
+    transform: translate(65px, 40px);
+  }
+
+  .counselling-form {
+    transform: translate(-10px, 30px);
+  }
+
+  .para {
+    text-align: center;
+  }
+  .phiso-info{
+    text-align: center;
   }
 }
