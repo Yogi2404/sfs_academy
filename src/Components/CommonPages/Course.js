@@ -1,9 +1,28 @@
-import React from "react";
-import Navbar from "../utilities/Navbar";
+import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import Navbar from "../utilities/NavbarItems";
 import Footer from "../utilities/Footer";
 import "../../Assets/css/Course.css"
 
 const Course = () => {
+    const navigate = useNavigate();
+    const [isChecked, setChecked] = useState(false);
+
+    const handleCheckboxChange = () => {
+        setChecked(!isChecked);
+    };
+
+    const handleEnrollment = () => {
+        if (isChecked) {
+            handleGotoPayments();
+        } else {
+            alert("Please agree to the terms and conditions to proceed.");
+        }
+    };
+
+    const handleGotoPayments = () => {
+        navigate('/payments');
+    };
     return (
         <>
             <div>
@@ -13,12 +32,31 @@ const Course = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="header">
-                            <h1>Course Name</h1>
-                            <p>Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. It can also help to reduce your risk of injury or illness in the future. It takes a holistic approach that involves the patient directly in their own care.</p>
-                            <h2>Description</h2>
-                            <p>Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. It can also help to reduce your risk of injury or illness in the future. It takes a holistic approach that involves the patient directly in their own care.</p>
-                            <h2>Fees Structure:</h2>
-                            <p>50,000</p>
+                            <div className="course-info">
+                                <h1>Course Name</h1>
+                                <p>Physiotherapy Tutorial Program</p>
+                                <p>[4 months live lectures(Program accessible for one year)]</p>
+                                <h2>Description</h2>
+                                <p>It covers all specialities of physical therapy components of academic, clinical and recent advances.  </p>
+                                <h2>Eligibility Criteria:</h2>
+                                <p>Third Year, Final Year, Bachelors & Masters of Physiotherapy all are eligible for joining this online tutorial.</p>
+                            </div>
+                            <div className="accept">
+                                <input
+                                    type="checkbox"
+                                    id="termsCheckbox"
+                                    checked={isChecked}
+                                    onChange={handleCheckboxChange}
+                                />
+                                <label className="check-label text-wrap" htmlFor="termsCheckbox">I agree to the terms and conditions and give my consent to pay the fees eligible for this program.</label><span className="red-star">*</span>
+                            </div>
+                            <div className="fees">
+                                <h2>Fees Structure: ₹ 36,999/-</h2>
+                                
+                            </div>
+                            <div className="enroll-button-payment">
+                                <button onClick={handleEnrollment}>Enroll now for the course and proceed with payment</button>
+                            </div>
                         </div>
                     </div>
                 </div>

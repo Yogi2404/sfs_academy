@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../utilities/Navbar";
 import Footer from "../utilities/Footer";
-import "../../Assets/css/TimeTable.css"
+import "../../Assets/css/TimeTable.css";
+import NavbarItems from "../utilities/NavbarItems";
 
 const TimeTable = () => {
     return (
         <div>
             <div className="navbar">
-                <Navbar />
+                <NavbarItems />
             </div>
             <div className="main-time-table">
                 <div class="table-responsive">

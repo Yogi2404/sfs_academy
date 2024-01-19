@@ -2,6 +2,8 @@ import { React, useState } from "react";
 import FormFields from "../Common/FormFields";
 import "../../Assets/css/CounsellingForm.css";
 import instance from "../../Config/axiosconfig";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CounsellingForm = () => {
 
@@ -13,12 +15,14 @@ const CounsellingForm = () => {
     const [consultationDate, setConsultationDate] = useState("");
 
     const handleSubmit = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
         try {
-            const response = await instance.post("auth/login", { fullName, email, mobileNumber, consultationDate })
-                console.log(response)
+            const response = await instance.post("/appointment", { fullName, email, mobileNumber, consultationDate });
+            console.log(response);
+            toast.success('Appointment successfully Scheduled!', { position: "top-right" });
         } catch (e) {
-            console.log(e)
+            console.log(e);
+            toast.error('Error submitting appointment. Please try again.', { position: "top-right" });
         }
     };
 
@@ -65,13 +69,16 @@ const CounsellingForm = () => {
                     label={label ? label : "Schedule Date for Meeting"}
                     requiredInd={true}
                     value={consultationDate}
-                    placeholder={label ? label : "Select your Date"}
+                    placeholder={label ? label : "YYYY-MM-DD"}
                     onChange={(e) => setConsultationDate(e.target.value)}
                     showErrorMsg={error && !consultationDate.trim() ? "Required!" : ""}
                 />
+                <div className="counseling-time">
+                    [9:00pm - 10:00pm (IST) from Monday to Saturday]
+                </div>
                 <button
                     className="button-submit"
-                    onClick={handleSubmit}>Submit
+                    onClick={handleSubmit}>Schedule Meeting ! 
                 </button>
             </div>
         </>

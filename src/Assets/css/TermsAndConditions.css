@@ -1,0 +1,28 @@
+.tac-main{
+    padding: 50px;
+}
+
+.terms-conditions{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #dfe2ee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-conditions ol{
+    list-style-type: decimal;
+}
+
+.terms-conditions li{
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 767px) {
+    .tac-main{
+        padding: 10px;
+    }
+}

@@ -169,6 +169,8 @@ const VideoPlayer = ({ src, thumbnail }) => {
         };
     }, []);
 
+    
+
     const renderCustomcontrols = () => {
         return(
             <>

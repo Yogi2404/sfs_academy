@@ -1,23 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from "./utilities/Navbar";
+import Navbar from "./utilities/NavbarItems";
 import Footer from "./utilities/Footer";
 import '../Assets/css/Main.css';
-import phisio from '../Assets/img/Doctor-bro.svg';
-import img2 from '../Assets/img/Online Doctor-pana.svg';
-import img3 from '../Assets/img/Phisiotherapy-rafiki.svg';
-import img4 from '../Assets/img/Phisiotherapy-pana.svg';
-import img5 from '../Assets/img/Webinar-pana.svg';
-import img6 from '../Assets/img/Reading glasses-bro.svg';
-import logo from '../Assets/img/SFS Academy Logo (14).png';
-import tt from '../Assets/img/Calendar-pana.svg';
-import ReactPlayer from 'react-player';
-import LoginModel from '../Components/User/LoginModal';
-import RegisterModal from "./User/RegisterModal";
+import phisio from '../Assets/img/phisioimg.jpg';
+import top from '../Assets/img/faisal.png';
 import VideoPlayer from './Common/VideoPlayer';
 import MyVideo from '../Assets/videos/demovideo.mp4';
 import VideoThumb from '../Assets/videos/Kalamkaar-releases-latest-song-No-Mercy-under-tunnel-vision-860x484.webp';
 import CounsellingForm from './CommonPages/CounsellingForm';
+import "../Assets/css/Animations.css";
+import physio from "../Assets/img/woman-having-physiotherapy-session-clinic.jpg";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Main = () => {
 
@@ -32,7 +27,9 @@ const Main = () => {
         navigate('/time-table');
     };
 
-
+    const handleGotoCourse = () => {
+        navigate('/login');
+    };
 
     const openLoginModal = () => {
         setShowLoginModal(true);
@@ -52,6 +49,10 @@ const Main = () => {
 
     return (
         <div>
+            <div>
+                {/* ... (your other components) */}
+                <ToastContainer />
+            </div>
             <div className="navbar">
                 <Navbar openLoginModal={openLoginModal} />
             </div>
@@ -63,141 +64,129 @@ const Main = () => {
                     </svg>
                 </button>
             </a>
-            <div className="col-lg-12 d-flex main-1">
-                <div className="title col-lg-6">
-
-                    <div className="wt">
-                        <h1 >Welcome to SFS Academy</h1>
-                        <div className="title-info">
-                            <p>It is an online academy which serves as a specialized platform dedicated to the comprehensive education and training of aspiring Physiotherapists in clinical and academics. Our Academy offers a program that is as per the compiled blueprints of International standards which creates a pathway to achieve success in becoming a licensed PT across the globe. Our academy focuses on enhancing Physiotherapy knowledge for better strategies in Rehabilitation.</p>
-                        </div>
+            <div className="container-fluid">
+                <div className="row main-1">
+                    {/* Left Column */}
+                    <div className="col-lg-6 left-side">
+                        <h1>Welcome to SFS Academy</h1>
+                        <p className="text-wrap">
+                            It is an online academy which serves as a specialized platform dedicated to the comprehensive education and training of aspiring Physiotherapists in clinical and academics. Our Academy offers a program that is as per the compiled blueprints of International standards which creates a pathway to achieve success in becoming a licensed PT across the globe. Our academy focuses on enhancing Physiotherapy knowledge for better strategies in Rehabilitation.
+                        </p>
+                        <div className="enroll-now"><button onClick={handleGotoCourse}>Enroll now for the Program</button></div>
                     </div>
-
-                    <div className="enroll-now">
-                        <button>Enroll now for the Program</button>
-                    </div>
-                </div>
-                <div className="col-lg-6 phisio">
-                    <VideoPlayer src={MyVideo} thumbnail={VideoThumb} />
-                </div>
-            </div>
-            <div className="d-flex main-2">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-6 pho">
-                            <h1 className="eyp">Why choose us?</h1>
-                            <div className="phiso-info">
-                                <ul>
-                                    <li>Our dedicated and highly skilled staff have good clinical exposure.</li>
-                                    <li>A thorough understanding what is required for enhancing clinical practice.</li>
-                                    <li>Our founder is relentless and enthusiastic at resolving issues and doubts both inside and outside the classroom.</li>
-                                    <li>We also emphasise on sharpening the management skills of our aspirants.</li>
-                                    <li>Bridging the gap between your academic and clinical knowledge.</li>
-                                </ul>
-                            </div>
-
+                    {/* Right Column */}
+                    <div className="col-lg-6 d-flex right-side portfolio">
+                        <div className="col-lg-6">
+                            <img src={top} alt="Your Image Description" className="img-fluid" />
                         </div>
-                        <div className="col-lg-6"></div>
-                        <div className="col-lg-6"></div>
-                        <div className="col-lg-6 pho">
-                            <h1 className="eyp">Enhancing your Physiotherapy</h1>
-                            <div className="phiso-info">
-                                <p>We offer variety of Resources, Live Lectures, Structured Study Material, Question solving strategies which will contain academic and practical insights. Our high quality and affordable online tutoring is provided by proficient tutors with a long standing clinical experience. Content is well curated and paced. A new perspective with clinical relevance will be a good add on to clinical practice.</p>
+                        <div className="col-lg-6 sfs-info">
+                            <div className="text-wrap">
+                                <h4>Dr. Shahfaisal Saifee (PT)</h4>
                             </div>
-                            <div className="col-lg-12 d-flex">
-                                <div className="col-lg-6 show">
-                                    <h3 className="stu">32</h3>
-                                    <h1 className="mt">Interactive</h1>
-                                    <h3 className="hs">Lectures</h3>
-                                </div>
-                                <div className="col-lg-6 show ms-5">
-                                    <h3 className="stu">5</h3>
-                                    <h1 className="mt">Bonus</h1>
-                                    <h3 className="hs">Lectures</h3>
-                                </div>
+                            <div className="text-wrap">
+                                <h4>11+ years of Experience</h4>
+                            </div>
+                            <div className="text-wrap">
+                                <h4>
+                                    BPTh, MPTh, MBA Healthcare Management (IIM) Lucknow
+                                </h4>
+                            </div>
+                            <div className="text-wrap">
+                                <h4>Currently Leading Department of Quality and Training at a Healthcare Company</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div className="col-lg-12 boxes main-3">
-                <h1>Phisiotherapy Course and Resources</h1>
-                <div className="d-flex box-container">
-                    <div className="col-lg-4">
-                        <div className="box1">
-                            <img src={tt} />
-                            <button onClick={handleGotoTimeTable}>Check Timetable</button>
-                        </div>
+            <div className="container-fluid">
+                <div className="row main-2">
+                    {/* Left Column */}
+                    <div className="col-lg-6 left-side">
+                        <img src={physio} alt="Your Image Description" className="img-fluid" />
                     </div>
-                    <div className="col-lg-4">
-                        <div className="box2">
-                            <img src={img5} />
-                            <button>Recorded Lectures</button>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="box3">
-                            <img src={img6} />
-                            <button>Get Resources</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="gp">
-                </div>
-
-            </div> */}
-            
-            <div className="col-lg-12 d-flex main-4">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-6 need-help">
-                            <h2 className="help d-flex justify-content-center">SFS Academy offers</h2>
-                            <ul className="course-offering d-flex justify-content-center">
-                                <li>Musculoskeletal</li>
-                                <li>Cardio Pulmonary and Vascular</li>
-                                <li>Neurology(Adult and Pedeatrics)</li>
-                                <li>Comunity Rehabilitation(Women's Health, Geritraics, Ergonomics) </li>
-                                <li>Manual Therapy</li>
-                                <li>Psycology (Human Behaviour Analysis) </li>
-                                <li>Radiology(X-Ray, MRI)</li>
-                                <li>Non-System and Other System Conditions </li>
-                                <li>Anatomy / Physiology / Bio-Mechanincs</li>
-                                <li>Treatment Theories and Strategies</li>
-                                <li>Electro Therapy </li>
-                                <li>Infection Control </li>
-                                <li>Indications and Contra-Indications</li>
+                    {/* Right Column */}
+                    <div className="col-lg-6 right-side">
+                        <h1>Why choose us?</h1>
+                        <p className="text-wrap">
+                            <ul>
+                                <li>Our dedicated and highly skilled staff have good clinical exposure.</li>
+                                <li>A thorough understanding of what is required for enhancing clinical practice.</li>
+                                <li>Our founder is relentless and enthusiastic at resolving issues and doubts both inside and outside the classroom.</li>
+                                <li>We also emphasize sharpening the management skills of our aspirants.</li>
+                                <li>We believe in bridging the gap between your academic and clinical knowledge.</li>
                             </ul>
-                            <h5 className="help d-flex justify-content-center">All Concepts will be explained in detail along with clinical reasoning. </h5>
-
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <div className="row main-3">
+                    {/* Left Column */}
+                    <div className="col-lg-6 left-side">
+                        <h1>Enhancing your Physiotherapy</h1>
+                        <p className="text-wrap">
+                            We offer variety of Resources, Live Lectures, Structured Study Material, Question solving strategies which will contain academic and practical insights. Our high quality and affordable online tutoring is provided by proficient tutors with a long standing clinical experience. Content is well curated and paced. A new perspective with clinical relevance will be a good add on to clinical practice.
+                        </p>
+                        <div className="col-lg-12 d-flex thpiol">
+                            <div className="col-lg-6 thpiol-left">
+                                <h3 className="mt">Interactive</h3>
+                                <h1 className="stu">Online</h1>
+                                <h3 className="hs">Lectures</h3>
+                            </div>
+                            <div className="col-lg-6 thpiol-right">
+                                <h3 className="mt">Trained</h3>
+                                <h1 className="stu">100+</h1>
+                                <h3 className="hs">Physiotherapists</h3>
+                            </div>
                         </div>
-                        <div className="col-lg-6 d-flex justify-content-center">
-                            <form className="form">
-                                <h2 className="byf">Schedule Your Free</h2>
-                                <h2 className="cons">Counselling</h2>
-                                <div className="counselling-form">
-                                    <CounsellingForm />
-                                </div>
-                            </form>
+                    </div>
+                    {/* Right Column */}
+                    <div className="col-lg-6 right-side">
+                        <img src={phisio} alt="Your Image Description" className="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <div className="row main-4">
+                    {/* Left Column */}
+                    <div className="col-lg-6 left-side">
+                        <h1>SFS Academy offers</h1>
+                        <p className="text-wrap">
+                            <ul className="course-offering d-flex justify-content-center container-fluid">
+                                <li className="text-wrap">Musculoskeletal</li>
+                                <li className="text-wrap">Cardio Pulmonary and Vascular</li>
+                                <li className="text-wrap">Neurology(Adult and Pedeatrics)</li>
+                                <li className="text-wrap">Comunity Rehabilitation (Women's Health, Geritraics, Ergonomics) </li>
+                                <li className="text-wrap">Manual Therapy</li>
+                                <li className="text-wrap">Psycology (Human Behaviour Analysis) </li>
+                                <li className="text-wrap">Gait/Posture</li>
+                                <li className="text-wrap">Non-System and Other System Conditions </li>
+                                <li className="text-wrap">Anatomy / Physiology / Bio-Mechanincs</li>
+                                <li className="text-wrap">Ethics</li>
+                                <li className="text-wrap">Treatment Theories and Strategies</li>
+                                <li className="text-wrap">Electro Therapy </li>
+                                <li className="text-wrap">Infection Control </li>
+                                <li className="text-wrap">Indications and Contra-Indications</li>
+                            </ul>
+                        </p>
+
+
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="col-lg-6 right-side">
+                        <h2 className="byf">Schedule Your Free</h2>
+                        <h2 className="cons">Counselling for clearing any doubts</h2>
+                        <div className="counselling-form">
+                            <CounsellingForm />
                         </div>
                     </div>
                 </div>
             </div>
+           
             <div className="footer">
                 <Footer />
             </div>
-            {/* opening login model */}
-            {showLoginModal && (
-                <LoginModel
-                    isOpen={showLoginModal}
-                    onClose={closeLoginModal}
-                    onOpenRegister={openRegisterModal}
-                    loggedIn={loggedIn}
-                />
-            )}
-
-            {showRegisterModal && (
-                <RegisterModal isOpen={showRegisterModal} onClose={closeRegisterModal} />
-            )}
         </div>
     );
 };

@@ -1,11 +1,15 @@
 import { React, useState } from "react";
 import FormFields from "../Common/FormFields";
 import "../../Assets/css/CounsellingForm.css";
-import Navbar from "../utilities/Navbar";
+import Navbar from "../utilities/NavbarItems";
 import Footer from "../utilities/Footer";
 import "../../Assets/css/LoginForm.css";
 import { useNavigate } from 'react-router-dom';
-import  instance  from "../../Config/axiosconfig.js";
+import instance from "../../Config/axiosconfig.js";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import Password from "../Common/Password";
 
 const LoginForm = () => {
 
@@ -21,13 +25,19 @@ const LoginForm = () => {
     //     navigate('/login');
     // }; 
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
+    const handleLoginSubmit = async (event) => {
+        event.preventDefault();
         try {
-            const response = await instance.post("auth/login", { email, password })
-                console.log(response)
+            const response = await instance.post("auth/login", { email, password });
+            console.log(response);
+            toast.success('Login successful!', { position: "top-right" });
+            // Add any further logic you need after successful login
+            setTimeout(() => {
+                navigate('/course');
+            }, 3000); // 3000 milliseconds (3 seconds)
         } catch (e) {
-            console.log(e)
+            console.log(e);
+            toast.error('Invalid email or password. Please try again.', { position: "top-right" });
         }
     };
 
@@ -37,14 +47,18 @@ const LoginForm = () => {
                 <div className="navbar">
                     <Navbar />
                 </div>
-                <main className="py-6 bg-surface-secondary">
+                <div>
+                    {/* ... (your other components) */}
+                    <ToastContainer />
+                </div>
+                <div className="py-6 bg-surface-secondary ">
                     <div className="container-fluid justify-content-center d-flex">
                         {/* Card show */}
-                        <div className="col-xl-6 col-lg-6">
+                        <div className="col-xl-6 col-lg-6 login-main">
                             <div className="card shadow mb-4" >
 
                                 {/* Card Body */}
-                                <div className="card-body sourcingcard">
+                                <div className="card-body logincard">
                                     <div className="justify-content-center d-flex">
                                         <div className='card-title'>
                                             <h3>Login to your Account</h3>
@@ -54,7 +68,7 @@ const LoginForm = () => {
                                         <div id="pnlCompanyDetails">
                                             <div className="row d-flex justify-content-center">
                                                 <div className="col-lg-6">
-                                                    
+
                                                     <FormFields
                                                         fieldName="TextInput"
                                                         id="email"
@@ -66,16 +80,13 @@ const LoginForm = () => {
                                                         onChange={(e) => setEmail(e.target.value)}
                                                         showErrorMsg={error && !email.trim() ? "Required!" : ""}
                                                     />
-                                                    <FormFields
-                                                        fieldName="TextInput"
+                                                    <Password
                                                         id="password"
-                                                        name="password"
-                                                        label={label ? label : "Password"}
+                                                        label="Password"
                                                         requiredInd={true}
-                                                        value={password}
-                                                        placeholder={label ? label : "Enter Password"}
-                                                        onChange={(e) => setPassword(e.target.value)}
-                                                        showErrorMsg={error && !password.trim() ? "Required!" : ""}
+                                                        placeholder="Enter your password"
+                                                        onChange={(value) => { console.log(value); setPassword(value)} }
+                                                    // Add other necessary props
                                                     />
                                                 </div>
                                             </div>
@@ -83,17 +94,17 @@ const LoginForm = () => {
                                         <div className="login-submit">
                                             <button
                                                 className="button-submit"
-                                                onClick={handleSubmit}>Login</button>
+                                                onClick={handleLoginSubmit}>Login</button>
                                         </div>
                                         <div className="existing-user">
-                                            <a href="/register">Already an existing user? Click here</a>
+                                            <a href="/register">Are you a new user? Click here</a>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div >
                     </div >
-                </main>
+                </div>
                 <div className="rl-footer">
                     <Footer />
                 </div>

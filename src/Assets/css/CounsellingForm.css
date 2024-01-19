@@ -9,9 +9,8 @@
     transform: .3s ease;
     transition: 0.5s;
     border: 1px solid #0097B2;
-    margin-top: 20px;
-    width: 200px;
-    margin-left: 150px;
+    margin-top: 10px;
+    width: 350px;
 }
 
 
@@ -21,10 +20,10 @@
     color: #0097B2;
 }
 
-@media only screen and (max-width: 768px) {
-
-    .button-submit{
-        transform: translate(-75px);
-        margin-bottom: 30px;
-    }
+.counseling-time{
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

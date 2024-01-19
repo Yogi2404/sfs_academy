@@ -61,11 +61,11 @@
 }
 
 .listnav {
-  margin-left: 450px;
+  margin-left: 230px;
 }
 
 .login-btn button {
-  width: 106px;
+  width: fit-content;
 }
 
 .login-btn img {

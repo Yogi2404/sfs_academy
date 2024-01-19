@@ -3,9 +3,7 @@ body {
   overflow-x: hidden;
 }
 
-.show {
-  width: 100%;
-}
+
 
 .container-fluid {
   /* Example: Limit content width to improve readability on larger screens */
@@ -16,10 +14,10 @@ body {
 }
 
 
-
-.navbar {
-  transform: translate();
+.navbar{
+  z-index: 1;
 }
+
 
 .button2 {
   position: fixed;
@@ -31,12 +29,12 @@ body {
   transition: all 0.2s ease-in;
   overflow: hidden;
   z-index: 1;
-  color: #009087;
+  color: #c4fffa;
   padding: 0.7em 3.3em 0.7em 1.7em;
   font-size: 18px;
   font-weight: 900;
   border-radius: 0.5em;
-  background: rgba(0, 144, 135, 0.2);
+  background: rgba(0, 144, 134, 0.658);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1px);
@@ -105,55 +103,146 @@ body {
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-
-.logo img {
-  width: 300px;
-  height: 100%;
-}
-
 .main-1 {
-  background-color: rgb(214, 242, 255);
-  height: 450px;
-  transform: translate(0px, -10px);
-  display: flex;
-  flex-wrap: wrap;
+  background-color: #00509d;
+  border-radius: 30px;
+  color: white;
+  padding: 30px;
+  margin: 20px;
 }
 
-.title {
-  padding-left: 100px;
-  padding-top: 100px;
+.main-2 {
+  background-color: #00509d;
+  border-radius: 30px;
+  color: white;
+  padding: 30px;
+  margin: 20px;
 }
 
-.wt h1 {
+.main-3{
+  background-color: #00509d;
+  border-radius: 30px;
+  color: white;
+  padding: 30px;
+  margin: 20px;
+}
+
+.main-4{
+  background-color: #00509d;
+  border-radius: 30px;
+  color: white;
+  padding: 30px;
+  margin: 20px;
+}
+
+.main-1 h1{
+  font-size: 50px;
+}
+
+.main-1 p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-1 img {
+  border-radius: 20px;
+}
+
+.sfs-info h4{
+  color: #00509d;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #51ff00;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.sfs-info h4:hover{
+  color: #00509d;
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.main-2 h1{
+  font-size: 50px;
+}
+
+.main-2 p{
+  text-align: left;
+}
+
+.main-2 ul{
+  list-style-type: circle;
+}
+
+.main-2 li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-2 img {
+  border-radius: 20px;
+}
+
+.main-3 h1{
   font-size: 40px;
 }
 
-.sfs {
-  font-size: 60px;
-  color: #38B6FF;
+.main-3 p{
+  font-size: 18px;
+  text-align: center;
 }
 
-.academy {
-  font-size: 60px;
-  color: #0097B2;
+.main-3 img {
+  border-radius: 20px;
 }
 
-.title-info {
-  font-weight: 600;
-  width: 500px;
+.left-side{
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.right-side{
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.mt{
+  color: #51ff00;
+}
+.stu {
+  color: #51ff00;
+  font-weight: 900;
+  margin-top: -20px;
+}
+.hs {
+  color: #51ff00;
+  margin-top: -20px;
+}
+.thpiol{
+  transform: translate(50px);
 }
 
 .enroll-now {
-  margin-top: 30px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  margin-bottom: 20px;
 }
 
 .enroll-now button {
-  background-color: #0097B2;
+  background-color: #51ff00;
+  font-weight: 700;
   border: none;
-  color: #fff;
+  color: #00509d;
   padding: 10px;
   border-radius: 25px;
-  width: 40%;
+  width: fit-content  ;
   transition: 0.5s;
   border: 1px solid #0097B2;
 }
@@ -165,400 +254,143 @@ body {
   box-shadow: rgb(0, 151, 178) 0px 10px 10px -10px;
 }
 
-.phisio {
-  width: 500px;
-  height: 100%;
-  padding-top: 50px;
-  border-radius: 10px;
-}
-
-
-.pho{
-  
-}
 
 
 
-.phi img {
-  width: 500px;
-  height: 100%;
-  transform: translate(60px,0px);
-}
 
-.phiso-info {
-  margin-top: 20px;
-  font-weight: 600;
-  width: 100%;
-  white-space: pre-wrap;
-}
-
-.phiso-info ul{
-  list-style: circle;
-}
-
-.phiso-info li{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.show {
-  width: 250px;
-  padding-left: 100px;
-  padding-top: 5px;
-}
-
-.mt {
-  color: #0097B2;
-  margin-top: -15px;
-  font-size: 30px;
-}
-
-.stu {
-  color: chartreuse;
-  font-weight: 900;
-  font-size: 50px;
-}
-
-.hs {
-  color: #38B6FF;
-  margin-top: -15px;
-}
-
-.boxes {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  background-color: rgb(214, 242, 255);
-}
-
-.main-3 {
-  height: auto;
-  overflow-x: hidden;
-  padding: 10px;
-  /* Hide horizontal overflow */
-  white-space: nowrap;
-}
-
-.boxes h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.gp button {
-  margin-left: 290px;
-  margin-top: 30px;
-  padding: 10px;
-  border: none;
-  color: white;
-  background-color: #38B6FF;
-  border-radius: 10px;
-  transition: 0.5s;
-  border: 1px solid #38B6FF;
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-.gp button:hover {
-  background-color: white;
-  color: #38B6FF;
-  border: 1px solid #38B6FF;
-}
-
-.box1 {
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.box2 {
-  width: 300px;
-  margin: 10px;
-  margin-left: 50px;
-  padding: 20px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.box3 {
-  width: 300px;
-  margin: 10px;
-  margin-left: 80px;
-  padding: 20px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.box1 button {
-  background-color: #0097B2;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  color: white;
-  border: 1px solid #0097B2;
-  transition: 0.5s;
-  transform: translate(-200px, 140px);
-}
-
-.box1 button:hover {
-  background-color: white;
-  border: 1px solid #0097B2;
-  color: #0097B2;
-}
-
-.box2 button {
-  background-color: #0097B2;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  color: white;
-  transition: 0.5s;
-  border: 1px solid #0097B2;
-  transform: translate(-200px, 140px);
-}
-
-.box2 button:hover {
-  background-color: white;
-  border: 1px solid #0097B2;
-  color: #0097B2;
-}
-
-.box3 button {
-  background-color: #0097B2;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  color: white;
-  transition: 0.5s;
-  border: 1px solid #0097B2;
-  transform: translate(-190px, 140px);
-}
-
-.box3 button:hover {
-  background-color: white;
-  border: 1px solid #0097B2;
-  color: #0097B2;
-}
-
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 500px;
-  border-radius: 20px;
-  position: relative;
-  margin-bottom: 30px;
-  transform: translate(20px,20px);
-}
-
-.need-help{
-  padding: 20px;
-}
-
-.para {
-  white-space: pre-wrap;
-}
 
 .byf {
   font-weight: 600;
   display: flex;
   align-items: center;
-  padding-left: 30px;
 }
 
 .cons {
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  padding-left: 30px;
-  margin-top: -25px;
-  color: #0097B2;
+  margin-top: -15px;
+  color: #ffffff;
 }
-
-
-.signin {
-  text-align: center;
-}
-
-.signin a {
-  color: royalblue;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
-}
-
-
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
-  width: 100%;
-  padding: 5px 5px 5px 5px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-}
-
-.star {
-  color: red;
-}
-
-.submit {
-  border: none;
-  outline: none;
-  background-color: #0097B2;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-  transform: .3s ease;
-  transition: 0.5s;
-  border: 1px solid #0097B2;
-}
-
-.submit:hover {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #0097B2;
-  color: #0097B2;
-}
-
 .course-offering li {
   background-color: #0097B2;
   color: white;
   border-radius: 10px;
   padding: 4px;
   width: fit-content;
-  transition: 0.3s;  
+  transition: 0.3s;
   margin: 5px;
 }
-.course-offering{
+
+.course-offering {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
 }
 
-.course-offering li:hover{
+.course-offering li:hover {
   color: chartreuse;
   cursor: pointer;
   transform: scale(1.1);
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
+@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .main-1 h1{
+    font-size: 25px;
   }
 
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .main-1 {
-    height: 600px;
-    margin-bottom: 200px;
+  .main-1{
+    margin: 0px;
   }
 
-  .wt {
-    transform: translate(-80px, 140px);
-    max-width: 100%;
+  .main-1 p{
+    font-size: 14px;
+    text-align: center;
   }
 
-  .wt h1 {
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-2 h1{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+
+  .main-2{
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .main-2 p{
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .main-3{
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .main-3 h1{
     font-size: 24px;
-    transform: translate(35px);
   }
 
-  .phisio {
-    transform: translate(45px, -445px);
-    width: 300px;
+  .main-3 p{
+    font-size: 17px;
   }
 
-  .enroll-now {
-    transform: translate(-30px, 130px);
+  .main-4{
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mt{
+    color: #51ff00;
+  }
+  .stu {
+    color: #51ff00;
+    font-weight: 900;
+    margin-top: -10px;
+  }
+  .hs {
+    color: #51ff00;
+    margin-top: -10px;
+  }
+  .thpiol{
+    transform: translate(0px);
   }
 
-  .enroll-now button {
-    width: 250px;
+  .thpiol-left{
+    margin-right: 10px;
   }
 
-  .title-info {
-    font-size: 15px;
+  .thpiol-right{
+    margin-left: 10px;
+  }
+
+  .course-offering{
+    display: grid;
+    grid-row: 2;
+  }
+
+  .course-offering li{
     width: 100%;
-    text-align: center;
-    transform: translate(30px);
   }
 
-  
-
-  .eyp {
-    font-size: 25px;
-    transform: translate(0px, -300px);
+  .byf{
+    font-size: 22px;
   }
 
-  .phi img {
-    width: 400px;
-    transform: translate(-60px, -100px);
+  .cons{
+    font-size: 18px;
+    margin-top: -10px;
   }
 
-  .form {
-    width: 100%;
-    /* Make the form fill the container on smaller screens */
-    padding-left: 20px;
-    /* Adjust left padding for smaller screens */
-  }
-
-  .box2 {
-    transform: translate(-20px);
-  }
-
-  .box3 {
-    transform: translate(-30px);
-  }
-
-  .nh {
-    font-size: 25px;
-    transform: translate(120px);
-  }
-
-  .help {
-    font-size: 20px;
-    transform: translate(30px);
-  }
-
-  .need-help {
-    transform: translate(0px, 20px);
-  }
-
-  .byf {
-    transform: translate(25px, 30px);
-  }
-
-  .cons {
-    transform: translate(65px, 40px);
-  }
-
-  .counselling-form {
-    transform: translate(-10px, 30px);
-  }
-
-  .para {
-    text-align: center;
-  }
-  .phiso-info{
-    text-align: center;
+  .counselling-form{
+    padding: 10px;
   }
 }

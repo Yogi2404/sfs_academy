@@ -1,3 +1,102 @@
 .header p{
     white-space: pre-wrap;
 }
+
+.enroll-button-payment button{
+    margin-bottom: 20px;
+    border: 1px solid #0097B2;
+    padding: 10px;
+    background-color: #0097B2;
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.enroll-button-payment button:hover{
+    border: 1px solid #0097B2;
+    background-color: white;
+    color: #0097B2;
+    scale: 1.01;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-info{
+    background-color: #0097B2;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+
+.accept span{
+    color: red;
+}
+
+.accept input {
+    margin: 15px;
+}
+
+.accept{
+    transition: 0.3s;
+    padding: 3px;
+    background-color: rgb(255, 216, 185);
+    width: fit-content;
+    border-radius: 5px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.accept:hover{
+    color: rgb(0, 81, 255);
+}
+
+.fees{
+    display: flex;
+    background-color: #00b235;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .accept {
+        width: 100%;
+        transform: scale(0.90);
+        height: 80px;
+    }
+
+    .accept span{
+        margin-left: 20px;
+    }
+
+    .accept input{
+        transform: translate(0px, -20px);
+        margin: 10px;
+    }
+
+    .check-label{
+        font-size: 15px;
+        word-wrap: break-word;
+        padding-top: 15px;
+    }
+
+    .enroll-button-payment button{
+        transform: scale(0.90);
+    }
+    
+}

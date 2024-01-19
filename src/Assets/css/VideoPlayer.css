@@ -1,7 +1,7 @@
 .pause-play{
     background-color: transparent;
     border: none;
-    transform: translate(0px, -35px);
+    transform: translate(-600px, -7px);
     color: white;
 }
 
@@ -17,7 +17,7 @@
     -webkit-appearance: none;
     appearance: none;
     transform: translate(30px, -60px);
-    width: 560px;
+    width: 520px;
   }
   
   /* Styling the track (background) of the range */
@@ -79,7 +79,7 @@
 }
 
 .mute{
-    transform: translate(590px, -88px);
+    transform: translate(550px, -88px);
     background-color: transparent;
     color: white;
     border: none;
@@ -87,7 +87,7 @@
 }
 
 .full-screen{
-    transform: translate(465px, -88px);
+    transform: translate(425px, -88px);
     background-color: transparent;
     color: white;
     border: none;
@@ -99,7 +99,7 @@
 }
 
 .video-player{
-    width: 640px;
+    width: 600px;
 }
 
 

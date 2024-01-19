@@ -1,7 +1,7 @@
 .login-submit{
-    display: flex;
-    justify-content: center;
-    transform: translate(-70px);
+    display: grid;
+    place-content: center;
+    place-items: center;
     margin: 10px;
 }
 
@@ -20,4 +20,12 @@
 
 .existing-user:hover{
     color: rgb(0, 84, 211);
+}
+
+@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+    .login-main{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 100%;
+    }
 }

@@ -1,10 +1,15 @@
 .register-submit{
-    display: flex;
-    justify-content: center;
-    transform: translate(-50px);
+    display: grid;
+    place-content: center;
+    place-items: center;
     margin: 10px;
 }
 
 .register-submit button{
     width: 500px;
+}
+@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .register-submit button{
+        width: 300px;
+    }
 }

@@ -1,0 +1,36 @@
+.review-photos {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photos img{
+    width: 590px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.photos{
+    padding: 20px;
+    background-color: rgba(3, 163, 255, 0.226);
+    border-radius: 20px;
+    border: 1px solid #0097B2;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.photos img:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 767px) {
+    .photos img{
+        width: 340px;
+    }
+}

@@ -34,13 +34,29 @@ const FormFields = ({ fieldName, inputDisabled, label, id, type, placeholder, op
                             type="text" // Use type "text" to allow custom formatting
                             className="form-control"
                             id={id}
-                            placeholder="YYYY/MM/DD"
+                            placeholder="YYYY-MM-DD"
                             value={value}
                             onChange={onChange}
                             onBlur={onBlur}
                             disabled={inputDisabled}
                             pattern="\d{4}/\d{2}/\d{2}" // Pattern for validating the date format
                             title="Please enter a date in the format YYYY/MM/DD"
+                        />
+                        {hasError && <div id={id} className="form-text text-danger">{showErrorMsg}</div>}
+                    </div>
+                );  
+            case "PasswordInput":
+                return (
+                    <div className="form-group">
+                        <label htmlFor={id}>{label}</label> {requiredInd ? (<span className="text-danger">*</span>) : (null)}
+                        <input
+                            type="password"
+                            className="form-control"
+                            id={id}
+                            placeholder={placeholder}
+                            value={value}
+                            onChange={onChange}
+                            disabled={inputDisabled}
                         />
                         {hasError && <div id={id} className="form-text text-danger">{showErrorMsg}</div>}
                     </div>

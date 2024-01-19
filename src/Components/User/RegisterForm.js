@@ -1,11 +1,15 @@
 import { React, useState } from "react";
 import FormFields from "../Common/FormFields";
 import "../../Assets/css/CounsellingForm.css";
-import Navbar from "../utilities/Navbar";
+import Navbar from "../utilities/NavbarItems";
 import Footer from "../utilities/Footer";
 import "../../Assets/css/RegisterForm.css";
 import { useNavigate } from 'react-router-dom';
 import instance from "../../Config/axiosconfig";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import Password from "../Common/Password";
 
 const RegisterForm = () => {
 
@@ -25,13 +29,20 @@ const RegisterForm = () => {
         navigate('/login');
     };
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
+    const handleRegisterSubmit = async (event) => {
+        event.preventDefault();
         try {
-            const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword })
-            console.log(response)
+            const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword });
+            console.log(response);
+            toast.success('Registration successful! You can now log in.', { position: "top-right" });
+            // Add any further logic you need after successful registration
+            // Navigate to another page after 3 seconds
+            setTimeout(() => {
+                navigate('/');
+            }, 3000); // 3000 milliseconds (3 seconds)
         } catch (e) {
-            console.log(e)
+            console.log(e);
+            toast.error('Registration failed. Please check your details and try again.', { position: "top-right" });
         }
     };
 
@@ -40,6 +51,10 @@ const RegisterForm = () => {
             <div>
                 <div className="navbar">
                     <Navbar />
+                </div>
+                <div>
+                    {/* ... (your other components) */}
+                    <ToastContainer />
                 </div>
                 <main className="py-6 bg-surface-secondary">
                     <div className="container-fluid">
@@ -57,86 +72,102 @@ const RegisterForm = () => {
                                     <form>
                                         <div id="pnlCompanyDetails">
                                             <div className="row">
-                                                <div className="col-lg-6">
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="firstName"
-                                                        name="firstName"
-                                                        label={label ? label : "First Name"}
-                                                        requiredInd={true}
-                                                        value={firstName}
-                                                        placeholder={label ? label : "Enter your First Name"}
-                                                        onChange={(e) => setFirstName(e.target.value)}
-                                                        showErrorMsg={error && !firstName.trim() ? "Required!" : ""}
-                                                    />
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="email"
-                                                        name="email"
-                                                        label={label ? label : "E-Mail"}
-                                                        requiredInd={true}
-                                                        value={email}
-                                                        placeholder={label ? label : "Enter your Mail-ID"}
-                                                        onChange={(e) => setEmail(e.target.value)}
-                                                        showErrorMsg={error && !email.trim() ? "Required!" : ""}
-                                                    />
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="password"
-                                                        name="password"
-                                                        label={label ? label : "Password"}
-                                                        requiredInd={true}
-                                                        value={password}
-                                                        placeholder={label ? label : "Enter Password"}
-                                                        onChange={(e) => setPassword(e.target.value)}
-                                                        showErrorMsg={error && !password.trim() ? "Required!" : ""}
-                                                    />
-                                                </div>
-                                                <div className="col-lg-6">
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="lastName"
-                                                        name="lastName"
-                                                        label={label ? label : "Last Name"}
-                                                        requiredInd={true}
-                                                        value={lastName}
-                                                        placeholder={label ? label : "Enter your Last Name"}
-                                                        onChange={(e) => setLastName(e.target.value)}
-                                                        showErrorMsg={error && !lastName.trim() ? "Required!" : ""}
-                                                    />
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="mobileNumber"
-                                                        name="mobileNumber"
-                                                        label={label ? label : "Mobile Number"}
-                                                        requiredInd={true}
-                                                        value={mobileNumber}
-                                                        placeholder={label ? label : "Enter your Mobile Number"}
-                                                        onChange={(e) => setMobileNumber(e.target.value)}
-                                                        showErrorMsg={error && !mobileNumber.trim() ? "Required!" : ""}
-                                                    />
-                                                    <FormFields
-                                                        fieldName="TextInput"
-                                                        id="confirmPassword"
-                                                        name="confirmPassword"
-                                                        label={label ? label : "Confirm Password"}
-                                                        requiredInd={true}
-                                                        value={confirmPassword}
-                                                        placeholder={label ? label : "Re-Enter Password"}
-                                                        onChange={(e) => setConfirmPassword(e.target.value)}
-                                                        showErrorMsg={error && !confirmPassword.trim() ? "Required!" : ""}
-                                                    />
+                                                <div className="col-lg-12">
+                                                    <div className="row">
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="firstName"
+                                                                name="firstName"
+                                                                label={label ? label : "First Name"}
+                                                                requiredInd={true}
+                                                                value={firstName}
+                                                                placeholder={label ? label : "Enter your First Name"}
+                                                                onChange={(e) => setFirstName(e.target.value)}
+                                                                showErrorMsg={error && !firstName.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="lastName"
+                                                                name="lastName"
+                                                                label={label ? label : "Last Name"}
+                                                                requiredInd={true}
+                                                                value={lastName}
+                                                                placeholder={label ? label : "Enter your Last Name"}
+                                                                onChange={(e) => setLastName(e.target.value)}
+                                                                showErrorMsg={error && !lastName.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="email"
+                                                                name="email"
+                                                                label={label ? label : "E-Mail"}
+                                                                requiredInd={true}
+                                                                value={email}
+                                                                placeholder={label ? label : "Enter your Mail-ID"}
+                                                                onChange={(e) => setEmail(e.target.value)}
+                                                                showErrorMsg={error && !email.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="mobileNumber"
+                                                                name="mobileNumber"
+                                                                label={label ? label : "Mobile Number"}
+                                                                requiredInd={true}
+                                                                value={mobileNumber}
+                                                                placeholder={label ? label : "Enter your Mobile Number"}
+                                                                onChange={(e) => setMobileNumber(e.target.value)}
+                                                                showErrorMsg={error && !mobileNumber.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="password"
+                                                                name="password"
+                                                                label={label ? label : "Password"}
+                                                                requiredInd={true}
+                                                                value={password}
+                                                                placeholder={label ? label : "Enter Password"}
+                                                                onChange={(e) => setPassword(e.target.value)}
+                                                                showErrorMsg={error && !password.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                        <div className="col-lg-6">
+                                                            <FormFields
+                                                                fieldName="TextInput"
+                                                                id="confirmPassword"
+                                                                name="confirmPassword"
+                                                                label={label ? label : "Confirm Password"}
+                                                                requiredInd={true}
+                                                                value={confirmPassword}
+                                                                placeholder={label ? label : "Re-Enter Password"}
+                                                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                                                showErrorMsg={error && !confirmPassword.trim() ? "Required!" : ""}
+                                                            />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="register-submit">
                                             <button
                                                 className="button-submit"
-                                                onClick={handleSubmit}>Register
+                                                onClick={handleRegisterSubmit}>Register
                                             </button>
                                         </div>
                                         <div className="existing-user">
-                                            <a href="/login" onClick={handleGotoLogin}>Are you a new user? Click here</a>
+                                            <a href="/login" onClick={handleGotoLogin}>Already an existing user? Click here</a>
                                         </div>
                                     </form>
                                 </div>

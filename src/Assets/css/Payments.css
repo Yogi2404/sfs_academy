@@ -1,0 +1,73 @@
+.payments-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.upi,
+.bank-transfer {
+    width: 48%;
+    height: 500px;
+    background-color: rgb(236, 236, 236);
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.amount{
+    background-color: rgb(212, 255, 212);
+    padding: 5px;
+    margin: 5px;
+    color: green;
+    border-radius: 10px;
+}
+
+.upi img{
+    width: 300px;
+    height: auto;
+}
+
+.buttoncom{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.confirm-butt{
+    
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.confirm-butt button{
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: #0097B2;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.confirm-butt button:hover{
+    background-color: transparent;
+    color: #0097B2;
+    border: 1px solid #0097B2;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .upi,
+    .bank-transfer{
+        width: 100%;
+    }
+
+    .confirm-butt p{
+        margin: 10px;
+        text-align: center;
+    }
+}

@@ -25,6 +25,26 @@ function Navbar({ openLoginModal }) {
         navigate('/login');
     };
 
+	const handleGotoReviews = () => {
+        // Use the history object to navigate to another page
+        navigate('/reviews');
+    };
+
+	const handleGotoCourse = () => {
+        // Use the history object to navigate to another page
+        navigate('/course');
+    };
+
+	const handleGotoResources = () => {
+        // Use the history object to navigate to another page
+        navigate('/resources');
+    };
+
+	const handleGotoTermsAndConditions = () => {
+        // Use the history object to navigate to another page
+        navigate('/termsandconditions');
+    };
+
 	const handleGotoHomePage = (event) => {
 		event.preventDefault();
         // Use the history object to navigate to another page
@@ -53,24 +73,28 @@ function Navbar({ openLoginModal }) {
 						</li>	
 						<li className="nav-item dropdown">
 							<div className="dropdown">
-								<button className="dropbtn">Course</button>
+								<button className="dropbtn" onClick={handleGotoCourse}>Course</button>
 							</div>
 						</li>
 						<li className="nav-item dropdown">
 							<div className="dropdown">
-								<button className="dropbtn">Resources</button>
+								<button className="dropbtn" onClick={handleGotoResources}>Resources</button>
 							</div>
 						</li>
 						<li className="nav-item dropdown">
 							<div className="dropdown">
-								<button className="dropbtn">Reviews</button>
+								<button className="dropbtn" onClick={handleGotoReviews}>Reviews</button>
+							</div>
+						</li>
+						<li className="nav-item dropdown">
+							<div className="dropdown">
+								<button className="dropbtn" onClick={handleGotoTermsAndConditions}>Terms and Conditions</button>
 							</div>
 						</li>
 					</ul>
 					<form className="d-flex login-btn" role="search" >
 						<button className="btn btn-outline-primary d-flex" type="button" onClick={handleGotoLogin}>
-							Sign Up
-							<img src={user} alt="User Icon" />
+							Register / Sign In
 						</button>
 					</form>
 				</div>

@@ -13,6 +13,9 @@ Infection Control
 Explained in detail with Clinical Reasoning in Relation to Physical Therapy
 
 
+http://localhost:5000/api/appointment/export-csv
+
+
 <div className='boxes main-3'>
                 <div className="container-fluid">
                     <div className="row">
