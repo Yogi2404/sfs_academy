@@ -32,19 +32,26 @@ const RegisterForm = () => {
     const handleRegisterSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword });
-            console.log(response);
-            toast.success('Registration successful! You can now log in.', { position: "top-right" });
-            // Add any further logic you need after successful registration
-            // Navigate to another page after 3 seconds
-            setTimeout(() => {
-                navigate('/');
-            }, 3000); // 3000 milliseconds (3 seconds)
+            if (password === confirmPassword) {
+                // Passwords match, proceed with registration
+                const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword });
+                console.log(response);
+                toast.success('Registration successful! You can now log in.', { position: "top-right" });
+                // Add any further logic you need after successful registration
+                // Navigate to another page after 3 seconds
+                setTimeout(() => {
+                    navigate('/');
+                }, 3000); // 3000 milliseconds (3 seconds)
+            } else {
+                // Passwords don't match, display an error message
+                toast.error('Passwords do not match. Please re-enter matching passwords.', { position: "top-right" });
+            }
         } catch (e) {
             console.log(e);
             toast.error('Registration failed. Please check your details and try again.', { position: "top-right" });
         }
     };
+    
 
     return (
         <>
@@ -131,29 +138,23 @@ const RegisterForm = () => {
                                                     </div>
                                                     <div className="row">
                                                         <div className="col-lg-6">
-                                                            <FormFields
-                                                                fieldName="TextInput"
+                                                            <Password
                                                                 id="password"
-                                                                name="password"
-                                                                label={label ? label : "Password"}
+                                                                label="Password"
                                                                 requiredInd={true}
-                                                                value={password}
-                                                                placeholder={label ? label : "Enter Password"}
-                                                                onChange={(e) => setPassword(e.target.value)}
-                                                                showErrorMsg={error && !password.trim() ? "Required!" : ""}
+                                                                placeholder="Enter your password"
+                                                                onChange={(value) => setPassword(value)}
+                                                            // Add other necessary props
                                                             />
                                                         </div>
                                                         <div className="col-lg-6">
-                                                            <FormFields
-                                                                fieldName="TextInput"
+                                                            <Password
                                                                 id="confirmPassword"
-                                                                name="confirmPassword"
-                                                                label={label ? label : "Confirm Password"}
+                                                                label="Confirm Password"
                                                                 requiredInd={true}
-                                                                value={confirmPassword}
-                                                                placeholder={label ? label : "Re-Enter Password"}
-                                                                onChange={(e) => setConfirmPassword(e.target.value)}
-                                                                showErrorMsg={error && !confirmPassword.trim() ? "Required!" : ""}
+                                                                placeholder="Re-enter to confirm your password"
+                                                                onChange={(value) => setPassword(value)}
+                                                            // Add other necessary props
                                                             />
                                                         </div>
                                                     </div>
