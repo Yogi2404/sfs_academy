@@ -51,7 +51,7 @@ const RegisterForm = () => {
             toast.error('Registration failed. Please check your details and try again.', { position: "top-right" });
         }
     };
-    
+
 
     return (
         <>

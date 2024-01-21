@@ -85,7 +85,7 @@ const LoginForm = () => {
                                                         label="Password"
                                                         requiredInd={true}
                                                         placeholder="Enter your password"
-                                                        onChange={(value) => { console.log(value); setPassword(value)} }
+                                                        onChange={(value) => setPassword(value) }
                                                     // Add other necessary props
                                                     />
                                                 </div>

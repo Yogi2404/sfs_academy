@@ -206,7 +206,7 @@ const ReviewComments = () => {
                         <div className="person-img">
                             <img src={r9} />
                         </div>
-                        <div className="name" style={{ marginRight: 5 , marginLeft: 5}}>akshadagugale62450@gmail.com</div>
+                        <div className="name" style={{ marginRight: 5, marginLeft: 5 }}>akshadagugale62450@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -227,7 +227,7 @@ const ReviewComments = () => {
                         <div className="person-img">
                             <img src={r10} />
                         </div>
-                        <div className="name" style={{ marginRight: 5 , marginLeft: 0}}>mulchandanidimple94@gmail.com</div>
+                        <div className="name" style={{ marginRight: 5, marginLeft: 0 }}>mulchandanidimple94@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -237,7 +237,7 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    The conceptual training is really great, it is always to the point and that helps us to understand the condition of the patient better and also helps in diagnosing the problem very easily.
+                        The conceptual training is really great, it is always to the point and that helps us to understand the condition of the patient better and also helps in diagnosing the problem very easily.
                         <br />
                         It helps me in understanding the problem very precisely and also it has helped me in designing the protocol very easily.
                     </div>
@@ -257,9 +257,9 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    I found the training very helpful and innovative. Very different and goal oriented unlike what is taught in the classroom lectures. 
+                        I found the training very helpful and innovative. Very different and goal oriented unlike what is taught in the classroom lectures.
                         <br />
-                        Many concepts taught by Dr. Faisal during our training sessions our useful in our day to day practice. For example: Importance of eccentric training, core and trunk stabilizing exercises for SCI patients, variations of VMO and Heel slides which are way more effective than our mainstream exercises. 
+                        Many concepts taught by Dr. Faisal during our training sessions our useful in our day to day practice. For example: Importance of eccentric training, core and trunk stabilizing exercises for SCI patients, variations of VMO and Heel slides which are way more effective than our mainstream exercises.
                     </div>
                 </div>
                 <div className="review-card">
@@ -267,7 +267,7 @@ const ReviewComments = () => {
                         <div className="person-img">
                             <img src={r12} />
                         </div>
-                        <div className="name" style={{ marginRight: 80}}>arssk21@gmail.com</div>
+                        <div className="name" style={{ marginRight: 80 }}>arssk21@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -277,9 +277,9 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    Very informative and new concept.
+                        Very informative and new concept.
                         <br />
-                        It helped me frame my rehab in a better manner keeping in mind the functional goals and probable results that can be achieved based on the insights taught during his training. 
+                        It helped me frame my rehab in a better manner keeping in mind the functional goals and probable results that can be achieved based on the insights taught during his training.
                     </div>
                 </div>
                 <div className="review-card">
@@ -287,7 +287,7 @@ const ReviewComments = () => {
                         <div className="person-img">
                             <img src={r13} />
                         </div>
-                        <div className="name" style={{ marginRight: 20}}>viral.k.gareja1111@gmail.com</div>
+                        <div className="name" style={{ marginRight: 20 }}>viral.k.gareja1111@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -297,7 +297,7 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    Dr.shahfaisal saifee provide very informative clinical reasoning which will help us in regular practice to make decision about difficult cases.
+                        Dr.shahfaisal saifee provide very informative clinical reasoning which will help us in regular practice to make decision about difficult cases.
                     </div>
                 </div>
                 <div className="review-card">
@@ -305,7 +305,7 @@ const ReviewComments = () => {
                         <div className="person-img">
                             <img src={r14} />
                         </div>
-                        <div className="name" style={{ marginRight: 50}}>waghsaileee@gmail.com</div>
+                        <div className="name" style={{ marginRight: 50 }}>waghsaileee@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -315,7 +315,7 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    To take such learning and interactive sessions often by you sir.. after along time brushed up the knowledge
+                        To take such learning and interactive sessions often by you sir.. after along time brushed up the knowledge
                     </div>
                 </div>
                 <div className="review-card">
@@ -333,8 +333,8 @@ const ReviewComments = () => {
                         </div>
                     </div>
                     <div className="card-body">
-                    The training was very helpful for our daily practice. It was very conceptual and that was the best part. In addition to that we also got to learn manipulation which was a plus. 
-Only one suggestion that training should be digitalize(online training).
+                        The training was very helpful for our daily practice. It was very conceptual and that was the best part. In addition to that we also got to learn manipulation which was a plus.
+                        Only one suggestion that training should be digitalize(online training).
                     </div>
                 </div>
                 <div className="review-card">
@@ -352,7 +352,7 @@ Only one suggestion that training should be digitalize(online training).
                         </div>
                     </div>
                     <div className="card-body">
-                    Dr.shahfaisal saifee sir, explain everything in reliable way.
+                        Dr.shahfaisal saifee sir, explain everything in reliable way.
                     </div>
                 </div>
                 <div className="review-card">
@@ -360,7 +360,7 @@ Only one suggestion that training should be digitalize(online training).
                         <div className="person-img">
                             <img src={r17} />
                         </div>
-                        <div className="name" style={{ marginRight: 10}}>preeti.shrisunder98@gmail.com</div>
+                        <div className="name" style={{ marginRight: 10 }}>preeti.shrisunder98@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -370,44 +370,8 @@ Only one suggestion that training should be digitalize(online training).
                         </div>
                     </div>
                     <div className="card-body">
-                    Loved the training 
-Had opportunities to learn alot
-                    </div>
-                </div>
-                <div className="review-card">
-                    <div className="card-header">
-                        <div className="person-img">
-                            <img src={r18} />
-                        </div>
-                        <div className="name" style={{ marginRight: 50}}>twinkle04.m@gmail.com</div>
-                        <div className="stars">
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                    Practical aspects need to be included more
-                    </div>
-                </div>
-                <div className="review-card">
-                    <div className="card-header">
-                        <div className="person-img">
-                            <img src={r19} />
-                        </div>
-                        <div className="name">treshaparmar8@gmail.com</div>
-                        <div className="stars">
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                    If we can add more practicals During training sessions .
+                        Loved the training
+                        Had opportunities to learn alot
                     </div>
                 </div>
                 <div className="review-card">
@@ -415,7 +379,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r20} />
                         </div>
-                        <div className="name" style={{ marginRight: 40}}>anjunanair821@gmail.com</div>
+                        <div className="name" style={{ marginRight: 40 }}>anjunanair821@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -425,25 +389,7 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    The session was absolutely super and interactive ,would like to her more the most interesting part was Q and A where everyones perception was measured and sir gave us a path....great 👍👍👍
-                    </div>
-                </div>
-                <div className="review-card">
-                    <div className="card-header">
-                        <div className="person-img">
-                            <img src={r21} />
-                        </div>
-                        <div className="name" style={{ marginRight: 35}}>garima101208@gmail.com</div>
-                        <div className="stars">
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                    It should be more elaborative and should be done more frequently.
+                        The session was absolutely super and interactive ,would like to her more the most interesting part was Q and A where everyones perception was measured and sir gave us a path....great 👍👍👍
                     </div>
                 </div>
                 <div className="review-card">
@@ -451,7 +397,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r22} />
                         </div>
-                        <div className="name" style={{ marginRight: 10}}>dr.tanayamhatre.pt@gmail.com</div>
+                        <div className="name" style={{ marginRight: 10 }}>dr.tanayamhatre.pt@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -461,9 +407,9 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    It was very educational and thought channeling 
+                        It was very educational and thought channeling
                         <br />
-                        It helped in setting up better protocol for the patient with better outcomes 
+                        It helped in setting up better protocol for the patient with better outcomes
                     </div>
                 </div>
                 <div className="review-card">
@@ -481,9 +427,9 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    The session highlighted concepts that are not extensively taught academically but has clinical relevance and applications. Using case examples in between made it easier to relate. 
+                        The session highlighted concepts that are not extensively taught academically but has clinical relevance and applications. Using case examples in between made it easier to relate.
                         <br />
-                        To be more vigilant about the biomechanical aspects of movement and how it can benefit clinical outcomes. 
+                        To be more vigilant about the biomechanical aspects of movement and how it can benefit clinical outcomes.
                     </div>
                 </div>
                 <div className="review-card">
@@ -501,9 +447,9 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Beneficial in my practice
+                        Beneficial in my practice
                         <br />
-                        Helped in differential diagnosis and specificity in management 
+                        Helped in differential diagnosis and specificity in management
                     </div>
                 </div>
                 <div className="review-card">
@@ -511,7 +457,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r25} />
                         </div>
-                        <div className="name" style={{ marginRight: 60}}>vicharea82@gmail.com</div>
+                        <div className="name" style={{ marginRight: 60 }}>vicharea82@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -521,7 +467,7 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    I found teaching to be incredibly enlightening. His approach made complex ideas clearer and more accessible.
+                        I found teaching to be incredibly enlightening. His approach made complex ideas clearer and more accessible.
                         <br />
                         Training has greatly enhanced my problem-solving abilities. Understanding the core principles allows me to approach challenges more strategically and find innovative solutions in my day-to-day work.
                     </div>
@@ -531,7 +477,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r26} />
                         </div>
-                        <div className="name" style={{ marginRight: 20}}>gujarathitulseetrg@gmail.com</div>
+                        <div className="name" style={{ marginRight: 20 }}>gujarathitulseetrg@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -541,29 +487,9 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    It was good , quite different 
+                        It was good , quite different
                         <br />
-                        It has helped me to have  a different outlook towards different conditions and make treatment techniques easier 
-                    </div>
-                </div>
-                <div className="review-card">
-                    <div className="card-header">
-                        <div className="person-img">
-                            <img src={r27} />
-                        </div>
-                        <div className="name">gajanankamat34@gmail.com</div>
-                        <div className="stars">
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                            <img src={star} />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                    Very informative 
-                        <br />
-                        Yes , almost most of the time 
+                        It has helped me to have  a different outlook towards different conditions and make treatment techniques easier
                     </div>
                 </div>
                 <div className="review-card">
@@ -581,7 +507,7 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Very informative 
+                        Very informative
                         <br />
                         Implications could be made in diagnosing faster
                     </div>
@@ -601,9 +527,9 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Very unique and easy to learn 
+                        Very unique and easy to learn
                         <br />
-                        It has helped me to improve assessment and diagnosis 
+                        It has helped me to improve assessment and diagnosis
                     </div>
                 </div>
                 <div className="review-card">
@@ -621,7 +547,7 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Very interesting and practical based concepts and hands on skills got cleared.
+                        Very interesting and practical based concepts and hands on skills got cleared.
                         <br />
                         To a very good extent!
                     </div>
@@ -631,7 +557,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r31} />
                         </div>
-                        <div className="name" style={{ marginRight: 50}}>twinkle04.m@gmail.com</div>
+                        <div className="name" style={{ marginRight: 50 }}>twinkle04.m@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -641,7 +567,7 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Found Directional approach in many cases on field
+                        Found Directional approach in many cases on field
                         <br />
                         Helpful and innovative in practical aspects
                     </div>
@@ -651,7 +577,7 @@ Had opportunities to learn alot
                         <div className="person-img">
                             <img src={r32} />
                         </div>
-                        <div className="name" style={{ marginRight: 10}}>muthiyankhushboo@gmail.com</div>
+                        <div className="name" style={{ marginRight: 10 }}>muthiyankhushboo@gmail.com</div>
                         <div className="stars">
                             <img src={star} />
                             <img src={star} />
@@ -661,12 +587,12 @@ Had opportunities to learn alot
                         </div>
                     </div>
                     <div className="card-body">
-                    Very well informative and focused on PT keypoints which are needed in practical
+                        Very well informative and focused on PT keypoints which are needed in practical
                         <br />
                         Helped in modifying treatment plans and protocol
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );
