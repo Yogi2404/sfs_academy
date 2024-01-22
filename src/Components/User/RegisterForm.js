@@ -42,10 +42,7 @@ const RegisterForm = () => {
                 setTimeout(() => {
                     navigate('/');
                 }, 3000); // 3000 milliseconds (3 seconds)
-            } else {
-                // Passwords don't match, display an error message
-                toast.error('Passwords do not match. Please re-enter matching passwords.', { position: "top-right" });
-            }
+            } 
         } catch (e) {
             console.log(e);
             toast.error('Registration failed. Please check your details and try again.', { position: "top-right" });
