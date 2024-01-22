@@ -78,7 +78,7 @@ const CounsellingForm = () => {
                 </div>
                 <button
                     className="button-submit"
-                    onClick={handleSubmit}>Schedule Meeting !    
+                    onClick={handleSubmit}>Schedule Meeting !
                 </button>
             </div>
         </>
