@@ -32,17 +32,14 @@ const RegisterForm = () => {
     const handleRegisterSubmit = async (event) => {
         event.preventDefault();
         try {
-            if (password === confirmPassword) {
-                // Passwords match, proceed with registration
-                const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword });
-                console.log(response);
-                toast.success('Registration successful! You can now log in.', { position: "top-right" });
-                // Add any further logic you need after successful registration
-                // Navigate to another page after 3 seconds
-                setTimeout(() => {
-                    navigate('/');
-                }, 3000); // 3000 milliseconds (3 seconds)
-            } 
+            const response = await instance.post("auth/register", { firstName, lastName, email, mobileNumber, password, confirmPassword });
+            console.log(response);
+            toast.success('Registration successful! You can now log in.', { position: "top-right" });
+            // Add any further logic you need after successful registration
+            // Navigate to another page after 3 seconds
+            setTimeout(() => {
+                navigate('/');
+            }, 3000); // 3000 milliseconds (3 seconds)
         } catch (e) {
             console.log(e);
             toast.error('Registration failed. Please check your details and try again.', { position: "top-right" });
