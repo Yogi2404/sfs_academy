@@ -183,7 +183,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-           
+
             <div className="footer">
                 <Footer />
             </div>

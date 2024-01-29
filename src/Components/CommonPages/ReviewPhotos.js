@@ -34,9 +34,7 @@ import img30 from "../../Assets/img/Photos/30.jpg";
 const ReviewPhotos = () => {
     return (
         <div className="review-photos">
-            <div className="photos">
-                <img src={img1} />
-            </div>
+            
             <div className="photos">
                 <img src={img2} />
             </div>
@@ -44,40 +42,13 @@ const ReviewPhotos = () => {
                 <img src={img3} />
             </div>
             <div className="photos">
-                <img src={img4} />
-            </div>
-            <div className="photos">
                 <img src={img5} />
-            </div>
-            <div className="photos">
-                <img src={img6} />
-            </div>
-            <div className="photos">
-                <img src={img7} />
-            </div>
-            <div className="photos">
-                <img src={img8} />
-            </div>
-            <div className="photos">
-                <img src={img9} />
             </div>
             <div className="photos">
                 <img src={img10} />
             </div>
             <div className="photos">
-                <img src={img11} />
-            </div>
-            <div className="photos">
-                <img src={img12} />
-            </div>
-            <div className="photos">
                 <img src={img13} />
-            </div>
-            <div className="photos">
-                <img src={img14} />
-            </div>
-            <div className="photos">
-                <img src={img15} />
             </div>
             <div className="photos">
                 <img src={img16} />

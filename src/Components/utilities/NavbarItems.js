@@ -51,7 +51,6 @@ function NavbarItems() {
         <a onClick={handleGoToCourse}>Course</a>
         <a onClick={handleGotoResources}>Resources</a>
         <a onClick={handleGotoReviews}>Reviews</a>
-        <a onClick={handleGotoTermsAndConditions}>Terms And Conditions</a>
         <button onClick={handleGotoLogin} className="button-login">Register/SignIn</button>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}><FaTimes /></button>
       </nav>
