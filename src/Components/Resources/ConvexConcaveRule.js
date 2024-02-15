@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Assets/css/Pdf.css";
 
 
-const DailyReading = () => {
+const ConvexConcaveRule = () => {
 
     return (
         <div>
-            Daily Reading here
+            Convex Concave rule for all Joints here
         </div>
     )
 }
 
-export default DailyReading;
+export default ConvexConcaveRule;

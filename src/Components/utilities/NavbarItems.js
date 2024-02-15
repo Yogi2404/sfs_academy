@@ -34,9 +34,6 @@ function NavbarItems() {
     navigate("/reviews");
   };
 
-  const handleGotoTermsAndConditions = () => {
-    navigate("/termsandconditions");
-  };
 
   const handleGoToComingSoon = () => {
     navigate("/comingsoon")

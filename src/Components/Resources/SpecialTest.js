@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Assets/css/Pdf.css";
 
 
-const DailyReading = () => {
+const SpecialTest = () => {
 
     return (
         <div>
-            Daily Reading here
+            Special Test here
         </div>
     )
 }
 
-export default DailyReading;
+export default SpecialTest;
