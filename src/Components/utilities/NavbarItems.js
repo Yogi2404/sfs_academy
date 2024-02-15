@@ -27,7 +27,7 @@ function NavbarItems() {
   };
 
   const handleGotoResources = () => {
-    navigate("/resources");
+    navigate("/loginnotes");
   };
 
   const handleGotoReviews = () => {
