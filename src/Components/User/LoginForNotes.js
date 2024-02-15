@@ -30,7 +30,7 @@ const LoginForNotes = () => {
         try {
             const response = await instance.post("auth/login", { email, password });
             console.log(response);
-            toast.success('Login successful!', { position: "top-right" });
+            toast.success('Login successful! You now have access to the Resources', { position: "top-right" });
             // Add any further logic you need after successful login
             setTimeout(() => {
                 navigate('/resources');
