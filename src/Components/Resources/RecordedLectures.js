@@ -12,8 +12,8 @@ const RecordedLectures = () => {
     return (
         <div>
             <div className="lecture-image">
-                <div class="card">
-                    <div class="card-details">
+                <div class="rcard">
+                    <div class="rcard-details">
                         <p class="text-title">Lecture 1 (18-01-2024)</p>
                         <p class="text-body">
                             <img onClick={openLinkInNewTab} src={lecture1img} width={300} height={200} />
@@ -22,7 +22,7 @@ const RecordedLectures = () => {
                             </button>
                         </p>
                     </div>
-                    <button onClick={openLinkInNewTab} class="card-button">Revise ▶️</button>
+                    <button onClick={openLinkInNewTab} class="rcard-button">Revise ▶️</button>
                 </div>
             </div>
 
