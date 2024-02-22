@@ -1,0 +1,8 @@
+.pdffile{
+    cursor: pointer;
+}
+
+.pdffile:hover{
+    color: rgb(25, 108, 204);
+    border-color: rgb(25, 108, 204);
+}
