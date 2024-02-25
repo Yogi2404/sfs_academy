@@ -1,3 +1,7 @@
+.lectures{
+  display: flex;
+}
+
 .lecture-image{
     margin: 20px;
 }
