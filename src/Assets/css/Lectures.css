@@ -39,7 +39,7 @@
     font-weight: 500;
     font-size: 30px;
     color: #006274;
-    width: 1300px;
+    width: 100%;
     position: relative; /* Add relative positioning */
 }
 

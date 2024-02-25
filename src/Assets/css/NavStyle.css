@@ -9,7 +9,6 @@ header nav{
     justify-content: flex-end;
     justify-items: flex-end;
     align-items: center;
-    margin-left: 410px;
 }
 
 header img{
@@ -19,9 +18,10 @@ header img{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: auto;
-    padding: 0 0rem;
+    padding: 0 1rem;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -57,7 +57,7 @@ header .nav-btn{
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     font-size: 1.8rem;
 }
@@ -94,7 +94,7 @@ header .nav-btn{
     }
     
     header .nav-btn{
-        visibility: visible;
+        display: block;
         opacity: 1;
     }
 
@@ -146,6 +146,5 @@ header .nav-btn{
         justify-content: flex-end;
         justify-items: flex-end;
         align-items: center;
-        margin-left: 500px;
     }
 }

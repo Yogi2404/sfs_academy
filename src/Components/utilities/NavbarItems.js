@@ -14,7 +14,6 @@ function NavbarItems() {
   }
 
   const handleGotoLogin = () => {
-    // Use the history object to navigate to another page
     navigate('/register');
   };
 
