@@ -4,6 +4,7 @@
     margin-bottom: 10px;
 }
 
+
 .resource-menu button {
     border: none;
     background-color: transparent;
@@ -11,10 +12,11 @@
     font-size: 30px;
     color: #0097B2;
     width: 400px;
-    position: relative; /* Add relative positioning */
+    position: relative;
+    /* Add relative positioning */
 }
 
-.resource-menu button:hover{
+.resource-menu button:hover {
     background-color: rgba(0, 174, 255, 0.164);
     transition: all 0.2s ease-in-out;
     border-radius: 10px 10px 0px 0px;
@@ -29,15 +31,19 @@
     height: 2px;
     background-color: #0097B2;
     transform-origin: 100% 50%;
-    transform: scaleX(0); /* Initial scale to 0, making it invisible */
-    transition: transform 0.3s ease; /* Add a transition for smooth effect */
+    transform: scaleX(0);
+    /* Initial scale to 0, making it invisible */
+    transition: transform 0.3s ease;
+    /* Add a transition for smooth effect */
 }
 
 .resource-menu button.active::before {
-    transform: scaleX(1); /* Scale to full width on active */
-    transform-origin: 0% 50%; /* Change transform-origin for smooth sliding effect */
+    transform: scaleX(1);
+    /* Scale to full width on active */
+    transform-origin: 0% 50%;
+    /* Change transform-origin for smooth sliding effect */
 }
 
-@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+@media only screen and (max-width: 1024px) and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     
 }

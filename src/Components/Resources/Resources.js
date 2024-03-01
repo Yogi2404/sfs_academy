@@ -22,7 +22,7 @@ const Resources = () => {
                 {activeSection === 1 && <Section1Content />}
                 {activeSection === 2 && <Section2Content />}
             </div>
-            <div className="footer">
+            <div className="r-footer">
                 <Footer />
             </div>
         </div>

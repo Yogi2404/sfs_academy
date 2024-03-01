@@ -111,7 +111,7 @@ const DailyReading = () => {
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR4}>
-                        Ligament tear .pdf
+                        Ligament tear.pdf
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
@@ -204,13 +204,7 @@ const DailyReading = () => {
                         Kendall Wrist and Hand 282-285.pdf
                     </div>
                 </div>
-                <div className="col-lg-4 p-3">
-                    <div className="card p-2 pdffile" onClick={openDR18}>
-
-                    </div>
-                </div>
             </div>
-
         </div>
     )
 }

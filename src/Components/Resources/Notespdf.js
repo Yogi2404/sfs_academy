@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Assets/css/Pdf.css";
-import "../../Assets/css/Notes.css"
-import RenderPDF from "../../Assets/pdf/pdf1.pdf"
-import ReactPDF from "@react-pdf/renderer";
 
 const Notespdf = () => {
 
@@ -60,10 +57,6 @@ const Notespdf = () => {
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN5}>
                         SPORTS ACTIVITIES POST THR.pdf
-                    </div>
-                </div>
-                <div className="col-lg-4 p-3">
-                    <div className="card p-2 pdffile" >
                     </div>
                 </div>
             </div>

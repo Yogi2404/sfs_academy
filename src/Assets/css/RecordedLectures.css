@@ -1,11 +1,11 @@
 .lectures{
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
 .lecture-image{
-    margin: 20px;
+  margin: 10px;
 }
-
 .lecture-image img{
     padding: 5px;
     border-radius: 10px;
@@ -90,3 +90,11 @@
     transform: translate(-50%, 50%);
     opacity: 1;
    }
+
+   
+@media only screen and (max-width: 1024px) {
+  .lectures{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

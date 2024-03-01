@@ -10,7 +10,7 @@ function NavbarItems() {
   const navigate = useNavigate();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav")
+    navRef.current.classList.toggle("responsive_nav");
   }
 
   const handleGotoLogin = () => {
@@ -48,7 +48,7 @@ function NavbarItems() {
         <a onClick={handleGotoResources}>Resources</a>
         <a onClick={handleGotoReviews}>Reviews</a>
         <button onClick={handleGotoLogin} className="button-login">Register/SignIn</button>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}><FaTimes /></button>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}><FaBars /></button>
       </nav>
       <button className="nav-btn nav-open-btn" onClick={showNavbar}><FaBars /></button>
     </header>

@@ -7,7 +7,8 @@
     display: flex;
     justify-content:space-between;
     cursor: pointer;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 2px solid #006274 !important;
     border-radius: 5px !important;
     padding: 10px;
@@ -19,7 +20,6 @@
 
 .cheron-down-icon{
     background-color: #fff;
-    border: 2px solid #006274;
     border-radius: 10px;
     height: 30px;
     margin-top: 7px;
