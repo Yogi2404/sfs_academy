@@ -64,7 +64,7 @@ const LoginForNotes = () => {
                                             <h4>Login to your Account to get Access</h4>
                                         </div>
                                     </div>
-                                    <div className="note col-lg-12">
+                                    <div className="note col-lg-12 text-wrap align-items-center">
                                             Note : Only enrolled participants can access the resources
                                     </div>
                                     <form>
