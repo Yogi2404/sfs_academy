@@ -5,79 +5,79 @@ import "../../Assets/css/Pdf.css";
 
 const DailyReading = () => {
     const openDR1 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1EvqYOCxSU6UbQg69u9gijaq76itZi8qT/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1pPfvHyIA0HMenA3bQnZB6snzhXcEBuaP/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR2 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1Q8GJl97z39V5VZZCdQk8uhHWmlZodawU/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1282VV-6IYHC3_o08kNHrPALjyhz4nyjb/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR3 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/12dnY-G1IpU2f4dStkbTIrUDap_pZGmP9/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1ma5gVpdtceNZMHNqrghu_zpgi86sPSbg/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR4 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1CmcI2t-LovmhMsvJYd77kHoB33kIPIp6/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/17vX1Nz71XfEeJ5be1o4VDhPg1cVfJa4o/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR5 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1uJ1m_b7Ovz2oezy4DWI5OMeTmlb3szE6/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1AOc9NTWWupgv96FxTylN04_sRB2JWN-w/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR6 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/17fd69Bv2mROJ7x0bVIRxIXJrtstlYkup/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1hCMf9xlFmjjE_8kBY9xdpBJciG_w48go/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR7 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1UZnhyTWcja6LJF2DljJ0IdjfhYMERJi4/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1QJVOjoC4G0nYcnIi1wrA2lbF8tXIPmev/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR8 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1qaNz_xLpT6Au0AYE7HARD-yo9q6aJPdP/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1lZxQETcJuy-Rq5ZuGugMMht_LVrU48_z/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR9 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1IXPplsKPe3m-JPDPA-qxEXABmbsuBee3/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1D3vozaaI6qbFxY10CDGMskWrAalNHAsw/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR10 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1wIRKerWerTktWvk0GM8z2oR3j4AnlpPZ/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1ao7td5R3CoTaNud0f6gX-pjIVkEVpwv5/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR11 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/19F9UB_NDdOTmNtLwM5W0OTdclgnDafx6/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1uLXlPoqDu5C_CAn8FioqAEL71ig3Tyd6/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR12 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/14j5xKsluUDioYOtN0bhsMtiGXMtSh3D8/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1nXy-bvBLcP1LnnK47FHJLKZZqLJqijFI/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR13 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1wr5Ykc8vfB45Jqt0ONPNBTbQb9z2xIgu/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1Bk23rC1YEx6P2wBule2CByw75DcQ3fs3/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR14 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1dXBtj-SdyGNZuxqB5b57AiuMB42P0U9g/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/172V_J0boLYdxacEF0AwS9B4g2y9TlFg0/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR15 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/14j5xKsluUDioYOtN0bhsMtiGXMtSh3D8/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1rOiixGrynEcdhEHWJzATQmHgjObDzl0e/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR16 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1E0zFCLYTGb2xQVKdvV1hLBpHfz1JNjF9/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1zHVFMONbyfAdnfNnrzohYhEi4IcXUMc_/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR17 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1YbR8FzUkWlTY8Fxtt-zhGMBV6tSoaz2Y/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1JgdcSJfGt_2fVevlAIUdWd2CYtIq8QLy/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR18 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1bhOEbjP32U2o-DWDSq1_n7pn7mBhRseb/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1F20i0Vi0ivAY567pC27fmQqT2VoHqAYu/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR19 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1bhOEbjP32U2o-DWDSq1_n7pn7mBhRseb/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1J3FU6a7euhMuxEyqeJ9eYQqSIWct-9p4/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR20 = () => {
@@ -94,114 +94,109 @@ const DailyReading = () => {
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR1}>
-                        Closed vs Open Kinematic exercises.pdf
+                        (Day 1) Closed vs Open Kinematic exercises
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR2}>
-                        Dermatomes, Myotomes, Reflexes pdf.pdf
+                        (Day 1) Dermatomes, Myotomes, Reflexes
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR3}>
-                        End Feel Magee 6th 24,25,35-37, 62.pdf
+                        (Day 1) End Feel Magee 6th 24,25,35-37, 62
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR4}>
-                        Ligament tear.pdf
+                        (Day 2) Ligament tear
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR5}>
-                        Kisner 7th 321-326 soft tissue , injury & repair management.pdf
+                        (Day 2) Types fo fractures Dutton 3rd 44-45
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR6}>
-                        Kisner 7th 344-347 fibromylgia and myofacial pain syndrome.pdf
+                        (Day 4) Kisner 7t h 321-326 soft tissue , injury &; repair management
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR7}>
-                        Kisner 7th 344-347 fibromylgia and myofacial pain syndrome.pdf
+                        (Day 5) Kisner 7th 344-347 fibromylgia and myofacial pain syndrome
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR8}>
-                        Kendall Shoulder 314-330 MMT shouder girdle.pdf
+                        (Day 7) Kendall Shoulder 314-330 MMT shouder girdle
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR9}>
-                        Circle of Willis and hemisphere.pdf
+                        (Day 10) Circle of Willis and hemisphere
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR10}>
-                        Incoordination O_Sullivan 6th 211-213.pdf
+                        (Day 12) Peripheral nerve injuries Kisner 7th 386-393
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR11}>
-                        Peripheral nerve injuries Kisner 7th 386-393.pdf
+                        (Day 13) CRPS Kisner 7th 409-413
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR12}>
-                        CRPS Kisner 7th 409-413.pdf
+                        (Day 13) Incoordination O_Sullivan 6th 211-213
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR13}>
-                        Kisner 7th 389-393.pdf
+                        (Day 14) Kisner 7th 389-393
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR14}>
-                        MMT Elbow Kendall Elbow 286-294.pdf
+                        (Day 14) MMT Elbow Kendall Elbow 286-294
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR15}>
-                        CRPS Kisner 7th 409-413.pdf
+                        (Day 17) Obstructive vs Restrictive O_Sullivan 6th 487-495
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR16}>
-                        Obstructive vs Restrictive O_Sullivan 6th 487-495.pdf
+                        (Day 19) Auscultation Hillegass 549-551
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR17}>
-                        Auscultation Hillegass 549-551.pdf
+                        (Day 19) Cardiac physiology Hillegass 22, 42-44
                     </div>
                 </div>
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR18}>
-                        Cardiac physiology Hillegass 22, 42-44.pdf
+                        (Day 19) Pulmonary Physiology Hillegass 9-11
                     </div>
                 </div>
             </div>
             <div className="col-lg-12 d-flex align-items-center justify-content-center">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR19}>
-                        Pulmonary Physiology Hillegass 9-11.pdf
-                    </div>
-                </div>
-                <div className="col-lg-4 p-3">
-                    <div className="card p-2 pdffile" onClick={openDR20}>
-                        Kendall Wrist and Hand 282-285.pdf
+                        (Day 20) Kendall Wrist and Hand 282-285
                     </div>
                 </div>
             </div>

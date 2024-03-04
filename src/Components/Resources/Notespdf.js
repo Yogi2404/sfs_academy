@@ -5,23 +5,23 @@ import "../../Assets/css/Pdf.css";
 const Notespdf = () => {
 
     const openN1 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/17Wvz9HKJjwgfNlHO6gtVm0dYt3KpDnSB/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/17DtYV_LKH4iPHqpRbVesMwOhPLoKS4VG/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openN2 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1XcTVHH_iMxBYAve889AAaP1wrWK-wzjl/view?usp=drive_link';
+        const linkUrl = 'https://drive.google.com/file/d/1tZ52nzMi-dwURFoMNYYDP_vxT5bz5R1q/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openN3 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1ubasiEcDOYpJhlJEvxnG6jwbllK0217k/view?usp=drive_link';
+        const linkUrl = 'https://drive.google.com/file/d/1Dgem1uvWmsItLAkgatSc4ZTbZYxpQ6I3/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openN4 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1EXEse68uL0an6Lf0vyjavBjcwA-gfvqX/view?usp=drive_link';
+        const linkUrl = 'https://drive.google.com/file/d/1MDiSNCT4xIGyGFuWvHFGlqVCY-QaMaai/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openN5 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1brsmzmpUeH4Xv2KLU8x93yQ7H5Nf6cdq/view?usp=drive_link';
+        const linkUrl = 'https://drive.google.com/file/d/1Z8C64okQ01GrvahFX2Ntc-vNW8xkPdHw/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
 
