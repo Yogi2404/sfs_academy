@@ -31,6 +31,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .button-content-container .content-but {
@@ -65,5 +66,7 @@
     transform: scaleX(1); /* Scale to full width on active */
     transform-origin: 0% 50%; /* Change transform-origin for smooth sliding effect */
 }
+
+
 
 

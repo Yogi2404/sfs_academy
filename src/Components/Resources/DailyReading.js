@@ -90,8 +90,8 @@ const DailyReading = () => {
     };
 
     return (
-        <div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+        <div className="notes">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR1}>
                         (Day 1) Closed vs Open Kinematic exercises
@@ -108,7 +108,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR4}>
                         (Day 2) Ligament tear
@@ -125,7 +125,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR7}>
                         (Day 5) Kisner 7th 344-347 fibromylgia and myofacial pain syndrome
@@ -142,7 +142,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR10}>
                         (Day 12) Peripheral nerve injuries Kisner 7th 386-393
@@ -159,7 +159,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR13}>
                         (Day 14) Kisner 7th 389-393
@@ -176,7 +176,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR16}>
                         (Day 19) Auscultation Hillegass 549-551
@@ -193,7 +193,7 @@ const DailyReading = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR19}>
                         (Day 20) Kendall Wrist and Hand 282-285

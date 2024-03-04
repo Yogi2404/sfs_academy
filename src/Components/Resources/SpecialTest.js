@@ -12,7 +12,7 @@ const SpecialTest = () => {
 
     return (
         <div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openST1}>
                         Special Test SFS Academy

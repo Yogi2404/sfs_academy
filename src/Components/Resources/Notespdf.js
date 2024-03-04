@@ -31,7 +31,7 @@ const Notespdf = () => {
 
     return (
         <div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN1}>
                         EARLY POST OPP PRECAUTIONS AFTER THA.pdf
@@ -48,7 +48,7 @@ const Notespdf = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-12 d-flex align-items-center justify-content-center">
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN4}>
                         SCAPULAR DYSKINESIA.pdf
