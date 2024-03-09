@@ -24,6 +24,10 @@ const Notespdf = () => {
         const linkUrl = 'https://drive.google.com/file/d/1Z8C64okQ01GrvahFX2Ntc-vNW8xkPdHw/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
+    const openN6 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/15r3459tCORo0G-4bXHV3ImZrjj77SPG8/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
 
 
 
@@ -57,6 +61,11 @@ const Notespdf = () => {
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN5}>
                         SPORTS ACTIVITIES POST THR.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN6}>
+                        Neuro Bascis.pdf
                     </div>
                 </div>
             </div>

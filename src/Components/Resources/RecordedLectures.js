@@ -2,6 +2,7 @@ import React from "react";
 import lecture1img from "../../Assets/img/lecture/lecture1ss.jpg";
 import lecture2img from "../../Assets/img/lecture/lecture2ss.png";
 import lecture3img from "../../Assets/img/lecture/lecture3ss.png";
+import lecture4img from "../../Assets/img/lecture/lecture4ss.png";
 import "../../Assets/css/RecordedLectures.css";
 
 const RecordedLectures = () => {
@@ -16,6 +17,10 @@ const RecordedLectures = () => {
     };
     const openLinkInNewTab3 = () => {
         const linkUrl = 'https://drive.google.com/file/d/1SdfvzPMAddGRaMVqBosVIrYwEV99YXXY/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openLinkInNewTab4 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1WWAScEazItafeNMqSswW4YkCkv6DyeuM/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
 
@@ -49,6 +54,7 @@ const RecordedLectures = () => {
                     <button onClick={openLinkInNewTab2} class="rcard-button">Revise ▶️</button>
                 </div>
             </div>
+            <br></br>
             <div className="lecture-image">
                 <div class="rcard">
                     <div class="rcard-details">
@@ -61,6 +67,20 @@ const RecordedLectures = () => {
                         </p>
                     </div>
                     <button onClick={openLinkInNewTab3} class="rcard-button">Revise ▶️</button>
+                </div>
+            </div>
+            <div className="lecture-image">
+                <div class="rcard">
+                    <div class="rcard-details">
+                        <p class="text-title">Lecture 4 (07-03-2024)</p>
+                        <p class="text-body">
+                            <img onClick={openLinkInNewTab4} src={lecture4img} width={300} height={200} />
+                            <button onClick={openLinkInNewTab4} className="playButton">
+                                ▶️
+                            </button>
+                        </p>
+                    </div>
+                    <button onClick={openLinkInNewTab4} class="rcard-button">Revise ▶️</button>
                 </div>
             </div>
 

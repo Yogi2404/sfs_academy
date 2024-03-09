@@ -81,13 +81,45 @@ const DailyReading = () => {
         window.open(linkUrl, '_blank');
     };
     const openDR20 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1-ptn6LdzBCwQlJtzc-enNIkv5XQstKva/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1SL6I5UmA6k5K4xmIoeEQbK7HReHUlWTf/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openDR21 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1bhOEbjP32U2o-DWDSq1_n7pn7mBhRseb/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1--WIrFgvSj1D0bq7Y-hAWxfOIBLtF_ts/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
+    const openDR22 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1TwZltmxY3AHGc9cnFw5QOFGuWShpfxQW/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openDR23 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1vyItIW8cGr6LRYvSL2E8i1pr4FPEG22n/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openDR24 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openDR25 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    }
+    const openDR26 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    }
+    const openDR27 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    }
+    const openDR28 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    }
+    const openDR29 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/17I0JOZVu6ZvE1Zs5rlcE4mFIjrwTmCw1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    }
 
     return (
         <div className="notes">
@@ -197,6 +229,62 @@ const DailyReading = () => {
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openDR19}>
                         (Day 20) Kendall Wrist and Hand 282-285
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR20}>
+                        DMD Umphred 554-568.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR21}>
+                        Fibromyalgia.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR22}>
+                    GB Syndrome Umphred 542-552.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR23}>
+                    IFT TherapyEd 2018 423.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR24}>
+                    Kendall Hip 422-433.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR25}>
+                    Mensical Injuries Kisner 7th 824-830.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR26}>
+                    Osullivan Stroke examination and intervention pg 667 to 695.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR27}>
+                    Rheumatoid Arthritis.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR28}>
+                    septic Arthritis .pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openDR29}>
+                    Spina Bifida Umphred 419-427.pdf
                     </div>
                 </div>
             </div>
