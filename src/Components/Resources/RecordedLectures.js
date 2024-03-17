@@ -34,7 +34,7 @@ const RecordedLectures = () => {
             <div className="lecture-image">
                 <div class="rcard">
                     <div class="rcard-details">
-                        <p class="text-title">Lecture 1 (18-02-2024)</p>
+                        <p class="text-title">Lecture 1 test(18-02-2024)</p>
                         <p class="text-body">
                             <img onClick={openLinkInNewTab} src={lecture1img} width={300} height={200} />
                             <button onClick={openLinkInNewTab} className="playButton">
