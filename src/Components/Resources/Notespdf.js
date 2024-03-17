@@ -28,7 +28,34 @@ const Notespdf = () => {
         const linkUrl = 'https://drive.google.com/file/d/15r3459tCORo0G-4bXHV3ImZrjj77SPG8/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
-
+    const openN7 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1aFXkgNSvv1Zj-mWWatyfOqkXvZPfAXp1/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN8 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1BNBjuJxHf1JB-1tDlzVkhofmfpzqhQSm/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN9 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1OiAX3izRHNnolFtrU_lvXhmSfus72zrL/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN10 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1O-wZ4wVcWHd0rmmwbajUiJUnZvyuKmSv/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN11 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1pObVO_fjXAE2Dm98umApiovdR2XndJ6q/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN12 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1nxzK1uvHyKb_bXuEQx5I5vSnndlSTuCj/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN13 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1jNg5bjOjcjeZsb_vXkQp3XTKRcymxZRT/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
 
 
 
@@ -66,6 +93,47 @@ const Notespdf = () => {
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN6}>
                         Neuro Bascis.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN7}>
+                    Lecture 1 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN8}>
+                    Lecture 2 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN9}>
+                    Lecture 3 notes.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN10}>
+                    Lecture 4 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN11}>
+                    Lecture 5 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN12}>
+                    Lecture 6 notes.pdf
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-12 d-flex align-items-center justify-content-center notes">
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN13}>
+                    Lecture 7 notes.pdf
                     </div>
                 </div>
             </div>
