@@ -4,6 +4,7 @@ import lecture2img from "../../Assets/img/lecture/lecture2ss.png";
 import lecture3img from "../../Assets/img/lecture/lecture3ss.png";
 import lecture4img from "../../Assets/img/lecture/lecture4ss.png";
 import lecture5img from "../../Assets/img/lecture/lecture5ss.png";
+import lecture6img from "../../Assets/img/lecture/lecture6ss.png";
 import "../../Assets/css/RecordedLectures.css";
 
 const RecordedLectures = () => {
@@ -28,13 +29,17 @@ const RecordedLectures = () => {
         const linkUrl = 'https://drive.google.com/file/d/1RYiCFiZvGvKzUg0zL2cYh4p6gWN2Dxhg/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
+    const openLinkInNewTab6 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1hAPVRUY_ErrjNv4rcV-Jv51FnqEvjyom/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
 
     return (
         <div className="lectures">
             <div className="lecture-image">
                 <div class="rcard">
                     <div class="rcard-details">
-                        <p class="text-title">Lecture 1 test(18-02-2024)</p>
+                        <p class="text-title">Lecture 1(18-02-2024)</p>
                         <p class="text-body">
                             <img onClick={openLinkInNewTab} src={lecture1img} width={300} height={200} />
                             <button onClick={openLinkInNewTab} className="playButton">
@@ -100,6 +105,20 @@ const RecordedLectures = () => {
                         </p>
                     </div>
                     <button onClick={openLinkInNewTab5} class="rcard-button">Revise ▶️</button>
+                </div>
+            </div>
+            <div className="lecture-image">
+                <div class="rcard">
+                    <div class="rcard-details">
+                        <p class="text-title">Lecture 6 (10-03-2024)</p>
+                        <p class="text-body">
+                            <img onClick={openLinkInNewTab6} src={lecture6img} width={300} height={200} />
+                            <button onClick={openLinkInNewTab6} className="playButton">
+                                ▶️
+                            </button>
+                        </p>
+                    </div>
+                    <button onClick={openLinkInNewTab6} class="rcard-button">Revise ▶️</button>
                 </div>
             </div>
             
