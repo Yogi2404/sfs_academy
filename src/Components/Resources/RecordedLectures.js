@@ -31,7 +31,7 @@ const RecordedLectures = () => {
         window.open(linkUrl, '_blank');
     };
     const openLinkInNewTab6 = () => {
-        const linkUrl = 'https://drive.google.com/file/d/1hAPVRUY_ErrjNv4rcV-Jv51FnqEvjyom/view?usp=sharing';
+        const linkUrl = 'https://drive.google.com/file/d/1swVZ_1Z1T47AsWRzLiMWux6K6YxKUFJ-/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
     const openLinkInNewTab7 = () => {
