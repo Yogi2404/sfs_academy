@@ -5,6 +5,7 @@ import lecture3img from "../../Assets/img/lecture/lecture3ss.png";
 import lecture4img from "../../Assets/img/lecture/lecture4ss.png";
 import lecture5img from "../../Assets/img/lecture/lecture5ss.png";
 import lecture6img from "../../Assets/img/lecture/lecture6ss.png";
+import lecture7img from "../../Assets/img/lecture/lecture7ss.png";
 import "../../Assets/css/RecordedLectures.css";
 
 const RecordedLectures = () => {
@@ -30,6 +31,10 @@ const RecordedLectures = () => {
         window.open(linkUrl, '_blank');
     };
     const openLinkInNewTab6 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1hAPVRUY_ErrjNv4rcV-Jv51FnqEvjyom/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openLinkInNewTab7 = () => {
         const linkUrl = 'https://drive.google.com/file/d/1hAPVRUY_ErrjNv4rcV-Jv51FnqEvjyom/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
@@ -110,7 +115,7 @@ const RecordedLectures = () => {
             <div className="lecture-image">
                 <div class="rcard">
                     <div class="rcard-details">
-                        <p class="text-title">Lecture 6 (10-03-2024)</p>
+                        <p class="text-title">Lecture 6 (14-03-2024)</p>
                         <p class="text-body">
                             <img onClick={openLinkInNewTab6} src={lecture6img} width={300} height={200} />
                             <button onClick={openLinkInNewTab6} className="playButton">
@@ -119,6 +124,20 @@ const RecordedLectures = () => {
                         </p>
                     </div>
                     <button onClick={openLinkInNewTab6} class="rcard-button">Revise ▶️</button>
+                </div>
+            </div>
+            <div className="lecture-image">
+                <div class="rcard">
+                    <div class="rcard-details">
+                        <p class="text-title">Lecture 7 (17-03-2024)</p>
+                        <p class="text-body">
+                            <img onClick={openLinkInNewTab7} src={lecture7img} width={300} height={200} />
+                            <button onClick={openLinkInNewTab7} className="playButton">
+                                ▶️
+                            </button>
+                        </p>
+                    </div>
+                    <button onClick={openLinkInNewTab7} class="rcard-button">Revise ▶️</button>
                 </div>
             </div>
             
