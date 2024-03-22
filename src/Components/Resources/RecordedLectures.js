@@ -150,7 +150,7 @@ const RecordedLectures = () => {
                     <div class="rcard-details">
                         <p class="text-title">Lecture 8 (21-03-2024)</p>
                         <p class="text-body">
-                            <img onClick={openLinkInNewTab8} src={lecture7img} width={300} height={200} />
+                            <img onClick={openLinkInNewTab8} src={lecture8img} width={300} height={200} />
                             <button onClick={openLinkInNewTab8} className="playButton">
                                 ▶️
                             </button>
