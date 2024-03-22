@@ -56,6 +56,14 @@ const Notespdf = () => {
         const linkUrl = 'https://drive.google.com/file/d/1jNg5bjOjcjeZsb_vXkQp3XTKRcymxZRT/view?usp=sharing';
         window.open(linkUrl, '_blank');
     };
+    const openN14 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/1Gvse_5IvkCjiFjeJxHTy06TOiHnJOfD5/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
+    const openN15 = () => {
+        const linkUrl = 'https://drive.google.com/file/d/16Gkg6nOkxGUnZAkaUO4LptWdWVGOaKnc/view?usp=sharing';
+        window.open(linkUrl, '_blank');
+    };
 
 
 
@@ -134,6 +142,16 @@ const Notespdf = () => {
                 <div className="col-lg-4 p-3">
                     <div className="card p-2 pdffile" onClick={openN13}>
                     Lecture 7 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN14}>
+                    Lecture 8 notes.pdf
+                    </div>
+                </div>
+                <div className="col-lg-4 p-3">
+                    <div className="card p-2 pdffile" onClick={openN15}>
+                    Lecture 9 notes.pdf
                     </div>
                 </div>
             </div>
